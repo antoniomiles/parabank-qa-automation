@@ -1,5 +1,11 @@
 # Ejecución real
 
+## Publicación y GitHub Actions
+
+Repositorio público autorizado: https://github.com/antoniomiles/parabank-qa-automation. Primer intento remoto: https://github.com/antoniomiles/parabank-qa-automation/actions/runs/43954503559, commit 945739fddacbee928e4be0b26331038a55e72e5a. El job functional terminó en failure en dos segundos, sin iniciar pasos ni pruebas. Anotación real: “The job was not started because your account is locked due to a billing issue.” No existen logs de ejecución del job ni artefactos de ese intento. Es un bloqueo de infraestructura de la cuenta, no un nuevo resultado funcional del aplicativo.
+
+El titular debe revisar la facturación de GitHub y reintentar el workflow cuando se resuelva. Las pruebas locales y sus históricos permanecen intactos. No se enviaron mensajes a talento humano.
+
 ## Reejecución del 16/11/2026, 20:07 UTC
 
 Se ejecutó nuevamente `npm test` después de aprobar TypeScript. Inicio: 20:07:42 UTC; duración: 78,09 s; retorno: 1. Resultado: 19 ejecutadas, 17 aprobadas, 2 fallidas de producto, 0 bloqueadas, 0 omitidas y 0 inestables. API: 5 aprobadas; web: 12 aprobadas y 2 fallidas. Se conservaron 17 PNG, 67 adjuntos, HTML, JSON, JUnit, vídeos y trazas de los fallos.

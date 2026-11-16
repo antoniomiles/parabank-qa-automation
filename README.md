@@ -9,7 +9,7 @@ Práctica independiente desarrollada con asistencia de IA: pruebas de pagos web/
 | A. Diseño de pruebas | 15 | [casos/casos-pagos.csv](casos/casos-pagos.csv) | Siete casos con datos, pasos, aceptación y prioridad |
 | B. Automatización web | 25 | [tests/web](tests/web) | 14 pruebas ejecutadas: 12 aprobadas y 2 fallidas por defectos del aplicativo |
 | C. Pruebas API | 20 | [tests/api](tests/api) | Cinco pruebas ejecutadas y aprobadas |
-| D. Pipeline CI/CD | 15 | [.github/workflows/qa.yml](.github/workflows/qa.yml) | Configurado; ejecución real en GitHub pendiente |
+| D. Pipeline CI/CD | 15 | [.github/workflows/qa.yml](.github/workflows/qa.yml) | Publicado; GitHub bloqueó el inicio del job por un problema de facturación de la cuenta |
 | E. Evidencias y defectos | 5 | [reports/runs](reports/runs), [resultados](docs/execution.md) y [defectos](docs/defects.md) | Reportes y evidencias reales conservados; defectos documentados |
 | F. Rendimiento JMeter | 20 | [performance](performance) | Dos escenarios configurados y validados sin carga; análisis simulado documentado |
 | G. Automatización móvil | 20 | [mobile](mobile) y [documentación](docs/mobile-appium.md) | Guía Appium y ejemplo preparados; ejecución con dispositivo pendiente |
@@ -92,7 +92,9 @@ npx.cmd playwright show-trace 'reports/runs/2026-11-16T18-34-32.571Z/artifacts/w
 
 Tras autorizar una publicación, incluir package-lock.json y [.github/workflows/qa.yml](.github/workflows/qa.yml), habilitar Actions y disponer de permisos de escritura y runners. Para ejecución manual, el workflow debe existir en la rama predeterminada: Actions → ParaBank functional QA → Run workflow → seleccionar rama → Run workflow. También se dispara por push a main y pull requests; ajustar el filtro si la rama principal tiene otro nombre.
 
-El job instala dependencias/Chromium, valida TypeScript y archivos locales, ejecuta la suite y publica resumen y artefactos incluso ante fallos. Descargar parabank-results-<run_id> (14 días de retención), extraerlo completo y ejecutar npx playwright show-report '<ruta-extraida>/html'. Contiene latest, no los históricos. Los fallos mantienen el job rojo; si falla la preparación antes de generar reportes, revisar los logs porque puede no existir artefacto. No hay ejecución remota verificada.
+El job instala dependencias/Chromium, valida TypeScript, ejecuta la suite y publica resumen y artefactos incluso ante fallos. Descargar parabank-results-<run_id> (14 días de retención), extraerlo completo y ejecutar npx playwright show-report '<ruta-extraida>/html'. Contiene latest, no los históricos. Los fallos mantienen el job rojo; si falla la preparación antes de generar reportes, revisar los logs porque puede no existir artefacto.
+
+Primer intento real: [ejecución 43954503559](https://github.com/antoniomiles/parabank-qa-automation/actions/runs/43954503559). GitHub informó: “The job was not started because your account is locked due to a billing issue.” No inició pasos ni pruebas y no generó artefactos. El titular debe revisar el bloqueo de facturación en su cuenta antes de reintentar. Los resultados locales conservados siguen siendo 17 aprobados y 2 fallidos.
 
 ## JMeter: solo entorno autorizado
 
@@ -199,7 +201,7 @@ Cero bloqueadas, omitidas o inestables en esa ejecución; 17 PNG y 67 adjuntos, 
 - BUG-02: acepta -1 y aumenta el saldo de la cuenta de prueba de 515.50 a 516.50; severidad alta. Ambos siguen fallidos frente a las reglas del ejercicio.
 - DEP-01: quedan cuatro avisos moderados en dependencias mobile, según el análisis npm conservado; requiere actualización compatible y validación.
 
-Se usan clientes ficticios únicos y cuentas propias de prueba. El entorno público puede reiniciarse; no se realiza limpieza global. Revisar credenciales sintéticas en los reportes antes de compartirlos. Quedan pendientes GitHub Actions remoto, Appium con SDK/dispositivo y la corrección externa de BUG-01/02. No se ejecutó carga ni estrés; JMeter solo se deserializó y compiló sin muestras. La cobertura no constituye una auditoría bancaria o de seguridad.
+Se usan clientes ficticios únicos y cuentas propias de prueba. El entorno público puede reiniciarse; no se realiza limpieza global. Revisar credenciales sintéticas en los reportes antes de compartirlos. Quedan pendientes resolver el bloqueo de facturación para ejecutar GitHub Actions, Appium con SDK/dispositivo y la corrección externa de BUG-01/02. No se ejecutó carga ni estrés; JMeter solo se deserializó y compiló sin muestras. La cobertura no constituye una auditoría bancaria o de seguridad.
 
 ## Documentos y procedencia
 
