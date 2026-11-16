@@ -1,6 +1,6 @@
 # ParaBank QA Automation
 
-Práctica independiente desarrollada con asistencia de IA: pruebas de pagos web/API con Playwright y TypeScript, CI, plan JMeter y ejemplo Appium. Los registros de procedencia y herramientas se conservan en docs y en los históricos; no se publicó el repositorio.
+Práctica independiente desarrollada con asistencia de IA: pruebas de pagos web/API con Playwright y TypeScript, CI, plan JMeter y ejemplo Appium. Los registros de procedencia y herramientas se conservan en docs y en los históricos.
 
 ## Entrega final: componentes A–G
 
@@ -16,7 +16,7 @@ Práctica independiente desarrollada con asistencia de IA: pruebas de pagos web/
 
 Los puntos son los criterios del documento, no una calificación obtenida. La estructura propuesta allí es ilustrativa: tests/web equivale a /web, tests/api a /api, reports a /evidencias y .github/workflows a /pipeline. Las instrucciones de reproducción y las limitaciones se detallan a continuación.
 
-La entrega del enlace a talento humano queda pendiente de publicar el repositorio con autorización y disponer del destinatario. No se ha publicado ni enviado ningún enlace.
+Repositorio público de entrega: [antoniomiles/parabank-qa-automation](https://github.com/antoniomiles/parabank-qa-automation). Compartir ese enlace con talento humano por el canal indicado. No se ha enviado ningún mensaje a terceros desde este proyecto.
 
 ## Flujo y reglas de aceptación
 
@@ -211,6 +211,6 @@ Se usan clientes ficticios únicos y cuentas propias de prueba. El entorno públ
 | [Validación JMeter](docs/jmeter-validation.json) y [log](docs/jmeter-validation.txt) | Herramientas, versiones, checksum y resultado real |
 | [Dependencias mobile](docs/mobile-dependency-audit.json) | Análisis npm registrado |
 
-Código: tests/web, tests/api, tests/support, mobile y scripts. Los originales Java/IntelliJ se conservaron. El PDF contiene una prohibición de IA; esta práctica asistida mantiene su procedencia explícita y no se declara realizada sin asistencia.
+Código: tests/web, tests/api, tests/support, mobile y scripts. Los archivos de configuración IntelliJ permanecen locales y excluidos de Git; src/Main.java se eliminó a petición del usuario. El PDF contiene una prohibición de IA; esta práctica asistida mantiene su procedencia explícita y no se declara realizada sin asistencia.
 
 Referencias oficiales: [Playwright](https://playwright.dev/docs/test-configuration), [ParaBank API](https://parabank.parasoft.com/parabank/api-docs/index.html), [GitHub Actions](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow), [JMeter](https://jmeter.apache.org/usermanual/get-started.html), [Appium](https://appium.io/docs/en/latest/quickstart/requirements/) y [UiAutomator2](https://appium.github.io/appium-uiautomator2-driver/latest/getting-started/).
