@@ -90,7 +90,7 @@ npx.cmd playwright show-trace 'reports/runs/2026-11-16T18-34-32.571Z/artifacts/w
 
 ## GitHub Actions
 
-Tras autorizar una publicación, incluir package-lock.json y [.github/workflows/qa.yml](.github/workflows/qa.yml), habilitar Actions y disponer de permisos de escritura y runners. Para ejecución manual, el workflow debe existir en la rama predeterminada: Actions → ParaBank functional QA → Run workflow → seleccionar rama → Run workflow. También se dispara por push a main y pull requests; ajustar el filtro si la rama principal tiene otro nombre.
+Tras autorizar una publicación, incluir package-lock.json y [.github/workflows/qa.yml](.github/workflows/qa.yml), habilitar Actions y disponer de permisos de escritura y runners. Para ejecución manual, el workflow debe existir en la rama predeterminada: Actions, ParaBank functional QA , Run workflow, seleccionar rama, Run workflow. También se dispara por push a main y pull requests; ajustar el filtro si la rama principal tiene otro nombre.
 
 El job instala dependencias/Chromium, valida TypeScript, ejecuta la suite y publica resumen y artefactos incluso ante fallos. Descargar parabank-results-<run_id> (14 días de retención), extraerlo completo y ejecutar npx playwright show-report '<ruta-extraida>/html'. Contiene latest, no los históricos. Los fallos mantienen el job rojo; si falla la preparación antes de generar reportes, revisar los logs porque puede no existir artefacto.
 
