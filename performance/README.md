@@ -4,7 +4,7 @@ La instalación, propiedades, validación y comandos de ejecución se centraliza
 
 ## Selección del endpoint
 
-GET /parabank/services/bank/accounts/{accountId}/transactions está publicado en [OpenAPI](../docs/openapi.yaml). Se consulta después del pago para confirmar el débito; su frecuencia e importancia justifican evaluarlo. El riesgo es degradar el acceso al historial al crecer los datos o devolver movimientos de otra cuenta.
+GET /parabank/services/bank/accounts/{accountId}/transactions está publicado en la [documentación REST](https://parabank.parasoft.com/parabank/api-docs/index.html). Se consulta después del pago para confirmar el débito; su frecuencia e importancia justifican evaluarlo. El riesgo es degradar el acceso al historial al crecer los datos o devolver movimientos de otra cuenta.
 
 El plan incluye HTTP Request, Accept JSON, timeouts, HTTP 200 exacto, aserción Groovy de JSON/pertenencia a cuenta, pausa de un segundo y Summary Report. No guarda cuerpos bajo carga.
 
@@ -16,4 +16,4 @@ Los valores 450/1.800 ms y 0/8% del [análisis simulado](analisis-simulado.md) p
 
 ## Registro de validación conservado
 
-JMeter 5.6.3 deserializó el archivo mediante SaveService y compiló la aserción Groovy sin ejecutarla; no se instanció motor ni se iniciaron grupos. Se usó Java 25 de IntelliJ; la advertencia real de XStream/Unsafe queda en el [log](../docs/jmeter-validation.txt). El ZIP de JMeter se verificó contra su SHA-512 oficial; [metadatos](../docs/jmeter-validation.json). No se generaron JTL ni reportes de rendimiento.
+JMeter 5.6.3 deserializó el archivo mediante SaveService y compiló la aserción Groovy sin ejecutarla; no se instanció motor ni se iniciaron grupos. Se usó Java 25 de IntelliJ; la advertencia real de XStream/Unsafe queda en el [log](../reports/validation/jmeter-validation.txt). El ZIP de JMeter se verificó contra su SHA-512 oficial; [metadatos](../reports/validation/jmeter-validation.json). No se generaron JTL ni reportes de rendimiento.

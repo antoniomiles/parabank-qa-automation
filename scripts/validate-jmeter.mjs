@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { delimiter, resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
@@ -12,7 +12,8 @@ const result = spawnSync(java, [
   'scripts/ValidateJmeter.java', home, 'performance/parabank.jmx',
 ], { encoding: 'utf8', timeout: 60_000 });
 const log = `${result.stdout || ''}${result.stderr || ''}\nExit code: ${result.status}\n`;
-writeFileSync('docs/jmeter-validation.txt', log);
+mkdirSync('reports/validation', { recursive: true });
+writeFileSync('reports/validation/jmeter-validation.txt', log);
 const sha512 = file => createHash('sha512').update(readFileSync(file)).digest('hex');
 const archive = '.tools/jmeter-download.zip';
 const checksum = '.tools/jmeter-download.zip.sha512';
@@ -23,7 +24,7 @@ if (existsSync(archive) && existsSync(checksum)) {
   assert.equal(actual, expected);
   archiveIntegrity = { sha512: actual, matchesOfficialChecksum: true };
 }
-writeFileSync('docs/jmeter-validation.json', JSON.stringify({
+writeFileSync('reports/validation/jmeter-validation.json', JSON.stringify({
   validatedAt: new Date().toISOString(), exitCode: result.status,
   mode: 'SaveService.loadTree y compilación Groovy; sin motor ni muestras',
   jmxSha512: sha512('performance/parabank.jmx'), archiveIntegrity,

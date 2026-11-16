@@ -1,6 +1,6 @@
 # ParaBank QA Automation
 
-Práctica independiente desarrollada con asistencia de IA: pruebas de pagos web/API con Playwright y TypeScript, CI, plan JMeter y ejemplo Appium. Los registros de procedencia y herramientas se conservan en docs y en los históricos.
+Proyecto de pruebas de pagos en ParaBank: Playwright y TypeScript, API REST, GitHub Actions, plan JMeter y documentación Appium.
 
 ## Entrega final: componentes A–G
 
@@ -10,7 +10,7 @@ Práctica independiente desarrollada con asistencia de IA: pruebas de pagos web/
 | B. Automatización web | 25 | [tests/web](tests/web) | 14 pruebas ejecutadas: 12 aprobadas y 2 fallidas por defectos del aplicativo |
 | C. Pruebas API | 20 | [tests/api](tests/api) | Cinco pruebas ejecutadas y aprobadas |
 | D. Pipeline CI/CD | 15 | [.github/workflows/qa.yml](.github/workflows/qa.yml) | Publicado; GitHub bloqueó el inicio del job por un problema de facturación de la cuenta |
-| E. Evidencias y defectos | 5 | [reports/runs](reports/runs), [resultados](docs/execution.md) y [defectos](docs/defects.md) | Reportes y evidencias reales conservados; defectos documentados |
+| E. Evidencias y defectos | 5 | [reports/runs](reports/runs), [resultados](#resultados-defectos-y-limitaciones) y [defectos](docs/defects.md) | Reportes y evidencias reales conservados; defectos documentados |
 | F. Rendimiento JMeter | 20 | [performance](performance) | Dos escenarios configurados y validados sin carga; análisis simulado documentado |
 | G. Automatización móvil | 20 | [mobile](mobile) y [documentación](docs/mobile-appium.md) | Guía Appium y ejemplo preparados; ejecución con dispositivo pendiente |
 
@@ -107,7 +107,7 @@ Instalar JMeter 5.6.3 de Apache y un JDK con compilador. El plan [performance/pa
 
 Si se habilitan ambos, se ejecutan secuencialmente; cada grupo aumenta gradualmente desde cero hasta su concurrencia objetivo. No son escalones sostenidos en un solo grupo. Propiedades: host, port, protocol, accountId, base.users/ramp/loops e incremental.users/ramp/loops.
 
-Desde la raíz, reemplazar las rutas por instalaciones existentes. El validador solo deserializa el plan original y compila Groovy; escribe docs/jmeter-validation.txt y .json, sin ejecutar muestras. La GUI abre una copia sin iniciarla:
+Desde la raíz, reemplazar las rutas por instalaciones existentes. El validador solo deserializa el plan original y compila Groovy; escribe reports/validation/jmeter-validation.txt y .json, sin ejecutar muestras. La GUI abre una copia sin iniciarla:
 
 ~~~powershell
 $env:JAVA_HOME='C:/ruta/al/jdk'
@@ -203,16 +203,17 @@ Cero bloqueadas, omitidas o inestables en esa ejecución; 17 PNG y 67 adjuntos, 
 
 Se usan clientes ficticios únicos y cuentas propias de prueba. El entorno público puede reiniciarse; no se realiza limpieza global. Revisar credenciales sintéticas en los reportes antes de compartirlos. Quedan pendientes resolver el bloqueo de facturación para ejecutar GitHub Actions, Appium con SDK/dispositivo y la corrección externa de BUG-01/02. No se ejecutó carga ni estrés; JMeter solo se deserializó y compiló sin muestras. La cobertura no constituye una auditoría bancaria o de seguridad.
 
-## Documentos y procedencia
+## Documentación y evidencias
 
-| Referencia | Contenido conservado |
+| Archivo o carpeta | Entregable |
 | --- | --- |
-| [Casos CSV](casos/casos-pagos.csv) y [plan de pruebas](docs/test-plan.md) | Alcance, aceptación, datos y trazabilidad |
-| [Ejecuciones](docs/execution.md) y [defectos](docs/defects.md) | Resultados, incidencias y limitaciones históricas |
-| [Fuente del PDF](docs/requirements-source.json) y [texto extraído](docs/requirements-extracted.txt) | Hash, procedencia y requisitos originales |
-| [Validación JMeter](docs/jmeter-validation.json) y [log](docs/jmeter-validation.txt) | Herramientas, versiones, checksum y resultado real |
-| [Dependencias mobile](docs/mobile-dependency-audit.json) | Análisis npm registrado |
+| [casos/casos-pagos.csv](casos/casos-pagos.csv) | A: diseño de casos y selección justificada |
+| [docs/defects.md](docs/defects.md) | E: defectos y limitaciones |
+| [docs/mobile-appium.md](docs/mobile-appium.md) | G: pasos para automatizar una app |
+| [reports/runs](reports/runs) | Reportes, capturas, trazas, vídeos y resultados conservados |
+| [reports/validation](reports/validation) | Validaciones JMeter y análisis de dependencias |
+| [performance](performance) | F: plan, justificación, métricas y análisis simulado |
 
-Código: tests/web, tests/api, tests/support, mobile y scripts. Los archivos de configuración IntelliJ permanecen locales y excluidos de Git; src/Main.java se eliminó a petición del usuario. El PDF contiene una prohibición de IA; esta práctica asistida mantiene su procedencia explícita y no se declara realizada sin asistencia.
+Código: tests/web, tests/api, tests/support, mobile y scripts.
 
 Referencias oficiales: [Playwright](https://playwright.dev/docs/test-configuration), [ParaBank API](https://parabank.parasoft.com/parabank/api-docs/index.html), [GitHub Actions](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow), [JMeter](https://jmeter.apache.org/usermanual/get-started.html), [Appium](https://appium.io/docs/en/latest/quickstart/requirements/) y [UiAutomator2](https://appium.github.io/appium-uiautomator2-driver/latest/getting-started/).
