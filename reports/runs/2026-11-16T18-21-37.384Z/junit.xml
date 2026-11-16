@@ -1,0 +1,224 @@
+<testsuites id="" name="" tests="19" failures="2" skipped="0" errors="0" time="67.91116099999999">
+<testsuite name="api\bank.spec.ts" timestamp="2026-11-16T18:18:23.279Z" hostname="api" tests="5" failures="0" skipped="0" time="10.039" errors="0">
+<testcase name="API-01 @smoke @positive published API contract" classname="api\bank.spec.ts" time="0.712">
+</testcase>
+<testcase name="API-05 @positive @regression bill payment and movement reconciliation" classname="api\bank.spec.ts" time="6.648">
+</testcase>
+<testcase name="API-02 @negative @regression invalid credentials" classname="api\bank.spec.ts" time="0.218">
+</testcase>
+<testcase name="API-03 @negative @regression nonexistent account" classname="api\bank.spec.ts" time="0.223">
+</testcase>
+<testcase name="API-04 @positive @regression customer and accounts contract" classname="api\bank.spec.ts" time="2.238">
+</testcase>
+</testsuite>
+<testsuite name="web\banking.spec.ts" timestamp="2026-11-16T18:18:23.279Z" hostname="chromium" tests="7" failures="0" skipped="0" time="14.068" errors="0">
+<testcase name="WEB-01 @smoke @positive public home" classname="web\banking.spec.ts" time="1.537">
+</testcase>
+<testcase name="WEB-02 @negative @regression empty login" classname="web\banking.spec.ts" time="1.549">
+</testcase>
+<testcase name="WEB-03 @negative @regression unknown login" classname="web\banking.spec.ts" time="1.714">
+</testcase>
+<testcase name="WEB-04 @negative @regression required registration fields" classname="web\banking.spec.ts" time="1.58">
+</testcase>
+<testcase name="WEB-05 @negative @regression mismatched password" classname="web\banking.spec.ts" time="1.592">
+</testcase>
+<testcase name="WEB-06 @positive @regression registration, accounts, logout and login" classname="web\banking.spec.ts" time="3.925">
+</testcase>
+<testcase name="WEB-07 @positive @regression public navigation" classname="web\banking.spec.ts" time="2.171">
+</testcase>
+</testsuite>
+<testsuite name="web\payments.spec.ts" timestamp="2026-11-16T18:18:23.279Z" hostname="chromium" tests="7" failures="2" skipped="0" time="40.765" errors="0">
+<testcase name="PAY-01 @positive @regression valid login permits bill pay" classname="web\payments.spec.ts" time="3.062">
+</testcase>
+<testcase name="PAY-02 @positive @regression valid payment records debit and balance" classname="web\payments.spec.ts" time="4.04">
+</testcase>
+<testcase name="PAY-03 @negative @regression required payment fields" classname="web\payments.spec.ts" time="1.984">
+</testcase>
+<testcase name="PAY-04 @negative @regression reject amount 0" classname="web\payments.spec.ts" time="13.817">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\web-payments-PAY-04-negative-regression-reject-amount-0-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\web-payments-PAY-04-negative-regression-reject-amount-0-chromium\video.webm]]
+
+[[ATTACHMENT|artifacts\web-payments-PAY-04-negative-regression-reject-amount-0-chromium\error-context.md]]
+
+[[ATTACHMENT|artifacts\web-payments-PAY-04-negative-regression-reject-amount-0-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeHidden() failed" type="expect.toBeHidden">
+<![CDATA[  [chromium] › web\payments.spec.ts:53:3 › PAY-04 @negative @regression reject amount 0 ────────────
+
+    Error: expect(locator).toBeHidden() failed
+
+    Locator:  getByRole('heading', { name: 'Bill Payment Complete' })
+    Expected: hidden
+    Received: visible
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "soft toBeHidden" getByRole('heading', { name: 'Bill Payment Complete' }) with timeout 10000ms
+      - waiting for getByRole('heading', { name: 'Bill Payment Complete' })
+        23 × locator resolved to <h1 class="title">Bill Payment Complete</h1>
+           - unexpected value "visible"
+
+
+      66 |     const transactions = await (await api.get(`accounts/${accountId}/transactions`)).json();
+      67 |     await info.attach('payment-business-check', { body: JSON.stringify({ amount, accountId, before, after, originalTransactions, transactions }, null, 2), contentType: 'application/json' });
+    > 68 |     await expect.soft(page.getByRole('heading', { name: 'Bill Payment Complete' })).toBeHidden();
+         |                                                                                     ^
+      69 |     expect.soft(after.balance).toBe(before.balance);
+      70 |     expect.soft(transactions).toEqual(originalTransactions);
+      71 |   });
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\payments.spec.ts:68:85
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 10
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "accountId": 102255,
+    +     "amount": 0,
+    +     "date": 1794787200000,
+    +     "description": "Bill Payment to Practice Utility",
+    +     "id": 149452,
+    +     "type": "Debit",
+    +   },
+    + ]
+
+      68 |     await expect.soft(page.getByRole('heading', { name: 'Bill Payment Complete' })).toBeHidden();
+      69 |     expect.soft(after.balance).toBe(before.balance);
+    > 70 |     expect.soft(transactions).toEqual(originalTransactions);
+         |                               ^
+      71 |   });
+      72 | }
+      73 |
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\payments.spec.ts:70:31
+
+    attachment #10: screenshot (image/png) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-payments-PAY-04-negative-regression-reject-amount-0-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #11: video (video/webm) ─────────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-payments-PAY-04-negative-regression-reject-amount-0-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\web-payments-PAY-04-negative-regression-reject-amount-0-chromium\error-context.md
+
+    attachment #13: trace (application/zip) ────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-payments-PAY-04-negative-regression-reject-amount-0-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\web-payments-PAY-04-negative-regression-reject-amount-0-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="PAY-05 @negative @regression reject amount -1" classname="web\payments.spec.ts" time="14.028">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\web-payments-PAY-05-negative-regression-reject-amount--1-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\web-payments-PAY-05-negative-regression-reject-amount--1-chromium\video.webm]]
+
+[[ATTACHMENT|artifacts\web-payments-PAY-05-negative-regression-reject-amount--1-chromium\error-context.md]]
+
+[[ATTACHMENT|artifacts\web-payments-PAY-05-negative-regression-reject-amount--1-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeHidden() failed" type="expect.toBeHidden">
+<![CDATA[  [chromium] › web\payments.spec.ts:53:3 › PAY-05 @negative @regression reject amount -1 ───────────
+
+    Error: expect(locator).toBeHidden() failed
+
+    Locator:  getByRole('heading', { name: 'Bill Payment Complete' })
+    Expected: hidden
+    Received: visible
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "soft toBeHidden" getByRole('heading', { name: 'Bill Payment Complete' }) with timeout 10000ms
+      - waiting for getByRole('heading', { name: 'Bill Payment Complete' })
+        23 × locator resolved to <h1 class="title">Bill Payment Complete</h1>
+           - unexpected value "visible"
+
+
+      66 |     const transactions = await (await api.get(`accounts/${accountId}/transactions`)).json();
+      67 |     await info.attach('payment-business-check', { body: JSON.stringify({ amount, accountId, before, after, originalTransactions, transactions }, null, 2), contentType: 'application/json' });
+    > 68 |     await expect.soft(page.getByRole('heading', { name: 'Bill Payment Complete' })).toBeHidden();
+         |                                                                                     ^
+      69 |     expect.soft(after.balance).toBe(before.balance);
+      70 |     expect.soft(transactions).toEqual(originalTransactions);
+      71 |   });
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\payments.spec.ts:68:85
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 515.5
+    Received: 516.5
+
+      67 |     await info.attach('payment-business-check', { body: JSON.stringify({ amount, accountId, before, after, originalTransactions, transactions }, null, 2), contentType: 'application/json' });
+      68 |     await expect.soft(page.getByRole('heading', { name: 'Bill Payment Complete' })).toBeHidden();
+    > 69 |     expect.soft(after.balance).toBe(before.balance);
+         |                                ^
+      70 |     expect.soft(transactions).toEqual(originalTransactions);
+      71 |   });
+      72 | }
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\payments.spec.ts:69:32
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 10
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "accountId": 102366,
+    +     "amount": -1,
+    +     "date": 1794787200000,
+    +     "description": "Bill Payment to Practice Utility",
+    +     "id": 149563,
+    +     "type": "Debit",
+    +   },
+    + ]
+
+      68 |     await expect.soft(page.getByRole('heading', { name: 'Bill Payment Complete' })).toBeHidden();
+      69 |     expect.soft(after.balance).toBe(before.balance);
+    > 70 |     expect.soft(transactions).toEqual(originalTransactions);
+         |                               ^
+      71 |   });
+      72 | }
+      73 |
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\payments.spec.ts:70:31
+
+    attachment #10: screenshot (image/png) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-payments-PAY-05-negative-regression-reject-amount--1-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #12: video (video/webm) ─────────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-payments-PAY-05-negative-regression-reject-amount--1-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\web-payments-PAY-05-negative-regression-reject-amount--1-chromium\error-context.md
+
+    attachment #14: trace (application/zip) ────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-payments-PAY-05-negative-regression-reject-amount--1-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\web-payments-PAY-05-negative-regression-reject-amount--1-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="PAY-06 @negative @regression bill pay requires authentication" classname="web\payments.spec.ts" time="1.454">
+</testcase>
+<testcase name="PAY-07 @negative @regression mismatched beneficiary account" classname="web\payments.spec.ts" time="2.38">
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,1093 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\TOÑO\\Desktop\\Prueba\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\TOÑO\\Desktop\\Prueba\\playwright.config.ts",
+    "rootDir": "C:/Users/TOÑO/Desktop/Prueba/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 600000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TOÑO/Desktop/Prueba/reports/latest/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "C:/Users/TOÑO/Desktop/Prueba/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/api/*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/TOÑO/Desktop/Prueba/reports/latest/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TOÑO/Desktop/Prueba/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/web/*.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "api",
+        "testDir": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests",
+        "snapshotDir": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests",
+        "testIgnore": [],
+        "testMatch": "**/api/*.spec.ts",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "https://parabank.parasoft.com",
+          "actionTimeout": 15000,
+          "navigationTimeout": 30000,
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "api"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests",
+        "snapshotDir": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests",
+        "testIgnore": [],
+        "testMatch": "**/web/*.spec.ts",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "https://parabank.parasoft.com",
+          "actionTimeout": 15000,
+          "navigationTimeout": 30000,
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/latest/html",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/latest/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/latest/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api\\bank.spec.ts",
+      "file": "api/bank.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "API-01 @smoke @positive service status",
+          "ok": false,
+          "tags": [
+            "smoke",
+            "positive"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 57,
+                  "error": {
+                    "message": "AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443\nconnect EACCES 172.66.170.155:443\nCall log:\n\u001b[2m  - → GET https://parabank.parasoft.com/parabank/services/bank/status\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
+                    "stack": "AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443\nconnect EACCES 172.66.170.155:443\nCall log:\n\u001b[2m  - → GET https://parabank.parasoft.com/parabank/services/bank/status\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n    at BankApi.get (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts:6:41)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\api\\bank.spec.ts:7:53",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts",
+                      "column": 41,
+                      "line": 6
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-api.ts:6\n\n \u001b[90m 4 |\u001b[39m   constructor(\u001b[36mprivate\u001b[39m readonly request\u001b[33m:\u001b[39m \u001b[33mAPIRequestContext\u001b[39m\u001b[33m,\u001b[39m \u001b[36mprivate\u001b[39m readonly info\u001b[33m:\u001b[39m \u001b[33mTestInfo\u001b[39m) {}\n \u001b[90m 5 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(path\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mAPIResponse\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mrequest\u001b[33m.\u001b[39mget(\u001b[32m`/parabank/services/bank/${path}`\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m   |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m       headers\u001b[33m:\u001b[39m { \u001b[33mAccept\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'application/json'\u001b[39m }\u001b[33m,\u001b[39m\n \u001b[90m 8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minfo\u001b[33m.\u001b[39mattach(\u001b[32m'api-response'\u001b[39m\u001b[33m,\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts",
+                        "column": 41,
+                        "line": 6
+                      },
+                      "message": "AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443\nconnect EACCES 172.66.170.155:443\nCall log:\n\u001b[2m  - → GET https://parabank.parasoft.com/parabank/services/bank/status\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n\n   at support\\bank-api.ts:6\n\n  4 |   constructor(private readonly request: APIRequestContext, private readonly info: TestInfo) {}\n  5 |   async get(path: string): Promise<APIResponse> {\n> 6 |     const response = await this.request.get(`/parabank/services/bank/${path}`, {\n    |                                         ^\n  7 |       headers: { Accept: 'application/json' },\n  8 |     });\n  9 |     await this.info.attach('api-response', {\n    at BankApi.get (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts:6:41)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\api\\bank.spec.ts:7:53"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:43.326Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\api-bank-API-01-smoke-positive-service-status-api\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\api-bank-API-01-smoke-positive-service-status-api\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts",
+                    "column": 41,
+                    "line": 6
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "23ffec6f3d06757a9e62-c5b5052e111d31cd551e",
+          "file": "api/bank.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "API-02 @negative @regression invalid credentials",
+          "ok": false,
+          "tags": [
+            "negative",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 42,
+                  "error": {
+                    "message": "AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443\nconnect EACCES 172.66.170.155:443\nCall log:\n\u001b[2m  - → GET https://parabank.parasoft.com/parabank/services/bank/login/qade2f24a216e043bcab/invalid\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
+                    "stack": "AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443\nconnect EACCES 172.66.170.155:443\nCall log:\n\u001b[2m  - → GET https://parabank.parasoft.com/parabank/services/bank/login/qade2f24a216e043bcab/invalid\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n    at BankApi.get (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts:6:41)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\api\\bank.spec.ts:13:53",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts",
+                      "column": 41,
+                      "line": 6
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-api.ts:6\n\n \u001b[90m 4 |\u001b[39m   constructor(\u001b[36mprivate\u001b[39m readonly request\u001b[33m:\u001b[39m \u001b[33mAPIRequestContext\u001b[39m\u001b[33m,\u001b[39m \u001b[36mprivate\u001b[39m readonly info\u001b[33m:\u001b[39m \u001b[33mTestInfo\u001b[39m) {}\n \u001b[90m 5 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(path\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mAPIResponse\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mrequest\u001b[33m.\u001b[39mget(\u001b[32m`/parabank/services/bank/${path}`\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m   |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m       headers\u001b[33m:\u001b[39m { \u001b[33mAccept\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'application/json'\u001b[39m }\u001b[33m,\u001b[39m\n \u001b[90m 8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minfo\u001b[33m.\u001b[39mattach(\u001b[32m'api-response'\u001b[39m\u001b[33m,\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts",
+                        "column": 41,
+                        "line": 6
+                      },
+                      "message": "AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443\nconnect EACCES 172.66.170.155:443\nCall log:\n\u001b[2m  - → GET https://parabank.parasoft.com/parabank/services/bank/login/qade2f24a216e043bcab/invalid\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n\n   at support\\bank-api.ts:6\n\n  4 |   constructor(private readonly request: APIRequestContext, private readonly info: TestInfo) {}\n  5 |   async get(path: string): Promise<APIResponse> {\n> 6 |     const response = await this.request.get(`/parabank/services/bank/${path}`, {\n    |                                         ^\n  7 |       headers: { Accept: 'application/json' },\n  8 |     });\n  9 |     await this.info.attach('api-response', {\n    at BankApi.get (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts:6:41)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\api\\bank.spec.ts:13:53"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:43.738Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\api-bank-API-02-negative-regression-invalid-credentials-api\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\api-bank-API-02-negative-regression-invalid-credentials-api\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts",
+                    "column": 41,
+                    "line": 6
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "23ffec6f3d06757a9e62-bc6819bc91a1b59f4e63",
+          "file": "api/bank.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "API-03 @negative @regression nonexistent account",
+          "ok": false,
+          "tags": [
+            "negative",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 46,
+                  "error": {
+                    "message": "AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443\nconnect EACCES 172.66.170.155:443\nCall log:\n\u001b[2m  - → GET https://parabank.parasoft.com/parabank/services/bank/accounts/2147483647\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
+                    "stack": "AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443\nconnect EACCES 172.66.170.155:443\nCall log:\n\u001b[2m  - → GET https://parabank.parasoft.com/parabank/services/bank/accounts/2147483647\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n    at BankApi.get (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts:6:41)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\api\\bank.spec.ts:19:53",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts",
+                      "column": 41,
+                      "line": 6
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-api.ts:6\n\n \u001b[90m 4 |\u001b[39m   constructor(\u001b[36mprivate\u001b[39m readonly request\u001b[33m:\u001b[39m \u001b[33mAPIRequestContext\u001b[39m\u001b[33m,\u001b[39m \u001b[36mprivate\u001b[39m readonly info\u001b[33m:\u001b[39m \u001b[33mTestInfo\u001b[39m) {}\n \u001b[90m 5 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mget\u001b[39m(path\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mAPIResponse\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mrequest\u001b[33m.\u001b[39mget(\u001b[32m`/parabank/services/bank/${path}`\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m   |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m       headers\u001b[33m:\u001b[39m { \u001b[33mAccept\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'application/json'\u001b[39m }\u001b[33m,\u001b[39m\n \u001b[90m 8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minfo\u001b[33m.\u001b[39mattach(\u001b[32m'api-response'\u001b[39m\u001b[33m,\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts",
+                        "column": 41,
+                        "line": 6
+                      },
+                      "message": "AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443\nconnect EACCES 172.66.170.155:443\nCall log:\n\u001b[2m  - → GET https://parabank.parasoft.com/parabank/services/bank/accounts/2147483647\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n\n   at support\\bank-api.ts:6\n\n  4 |   constructor(private readonly request: APIRequestContext, private readonly info: TestInfo) {}\n  5 |   async get(path: string): Promise<APIResponse> {\n> 6 |     const response = await this.request.get(`/parabank/services/bank/${path}`, {\n    |                                         ^\n  7 |       headers: { Accept: 'application/json' },\n  8 |     });\n  9 |     await this.info.attach('api-response', {\n    at BankApi.get (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts:6:41)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\api\\bank.spec.ts:19:53"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:44.175Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\api-bank-API-03-negative-regression-nonexistent-account-api\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\api-bank-API-03-negative-regression-nonexistent-account-api\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-api.ts",
+                    "column": 41,
+                    "line": 6
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "23ffec6f3d06757a9e62-02e075a9b8a4f496cd0e",
+          "file": "api/bank.spec.ts",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "API-04 @positive @regression customer and accounts contract",
+          "ok": false,
+          "tags": [
+            "positive",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2999,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at BankPage.register (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:18:16)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\api\\bank.spec.ts:28:49",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                      "column": 21,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-page.ts:8\n\n \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m open(path \u001b[33m=\u001b[39m \u001b[32m'index.htm'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m`/parabank/${path}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   }\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                        "column": 21,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at support\\bank-page.ts:8\n\n   6 |\n   7 |   async open(path = 'index.htm') {\n>  8 |     await this.page.goto(`/parabank/${path}`);\n     |                     ^\n   9 |   }\n  10 |\n  11 |   async login(username: string, password: string) {\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at BankPage.register (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:18:16)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\api\\bank.spec.ts:28:49"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:44.635Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                    "column": 21,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "23ffec6f3d06757a9e62-799297f6fed3eafd63ad",
+          "file": "api/bank.spec.ts",
+          "line": 24,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "web\\banking.spec.ts",
+      "file": "web/banking.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WEB-01 @smoke @positive public home",
+          "ok": false,
+          "tags": [
+            "smoke",
+            "positive"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 323,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:5:14",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                      "column": 21,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-page.ts:8\n\n \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m open(path \u001b[33m=\u001b[39m \u001b[32m'index.htm'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m`/parabank/${path}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   }\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                        "column": 21,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n\n   at support\\bank-page.ts:8\n\n   6 |\n   7 |   async open(path = 'index.htm') {\n>  8 |     await this.page.goto(`/parabank/${path}`);\n     |                     ^\n   9 |   }\n  10 |\n  11 |   async login(username: string, password: string) {\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:5:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:49.195Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-01-smoke-positive-public-home-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "final-page",
+                      "contentType": "image/png",
+                      "body": "iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAIAAABAH0oBAAAQAElEQVR4nOzXAQ0AIAzAsIfg3/LxwVoXvbs7AAAA8LszAAAAECDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMMAAAFAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAinmmqQAAAEdJREFUACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJDwAAAA///FxCTCAAAABklEQVQDAOhHCKDOc7AcAAAAAElFTkSuQmCC"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-01-smoke-positive-public-home-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-01-smoke-positive-public-home-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-01-smoke-positive-public-home-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                    "column": 21,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "091649cf49e61a48942e-13362c0ec0eab249f2a8",
+          "file": "web/banking.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "WEB-02 @negative @regression empty login",
+          "ok": false,
+          "tags": [
+            "negative",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 321,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:12:14",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                      "column": 21,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-page.ts:8\n\n \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m open(path \u001b[33m=\u001b[39m \u001b[32m'index.htm'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m`/parabank/${path}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   }\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                        "column": 21,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n\n   at support\\bank-page.ts:8\n\n   6 |\n   7 |   async open(path = 'index.htm') {\n>  8 |     await this.page.goto(`/parabank/${path}`);\n     |                     ^\n   9 |   }\n  10 |\n  11 |   async login(username: string, password: string) {\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:12:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:50.357Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-02-negative-regression-empty-login-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "final-page",
+                      "contentType": "image/png",
+                      "body": "iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAIAAABAH0oBAAAQAElEQVR4nOzXAQ0AIAzAsIfg3/LxwVoXvbs7AAAA8LszAAAAECDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMMAAAFAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAinmmqQAAAEdJREFUACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJDwAAAA///FxCTCAAAABklEQVQDAOhHCKDOc7AcAAAAAElFTkSuQmCC"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-02-negative-regression-empty-login-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-02-negative-regression-empty-login-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-02-negative-regression-empty-login-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                    "column": 21,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "091649cf49e61a48942e-1c796e470f0b1a0d5d21",
+          "file": "web/banking.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "WEB-03 @negative @regression unknown login",
+          "ok": false,
+          "tags": [
+            "negative",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 299,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:18:14",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                      "column": 21,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-page.ts:8\n\n \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m open(path \u001b[33m=\u001b[39m \u001b[32m'index.htm'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m`/parabank/${path}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   }\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                        "column": 21,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n\n   at support\\bank-page.ts:8\n\n   6 |\n   7 |   async open(path = 'index.htm') {\n>  8 |     await this.page.goto(`/parabank/${path}`);\n     |                     ^\n   9 |   }\n  10 |\n  11 |   async login(username: string, password: string) {\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:18:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:51.470Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-03-negative-regression-unknown-login-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "final-page",
+                      "contentType": "image/png",
+                      "body": "iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAIAAABAH0oBAAAQAElEQVR4nOzXAQ0AIAzAsIfg3/LxwVoXvbs7AAAA8LszAAAAECDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMMAAAFAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAinmmqQAAAEdJREFUACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJDwAAAA///FxCTCAAAABklEQVQDAOhHCKDOc7AcAAAAAElFTkSuQmCC"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-03-negative-regression-unknown-login-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-03-negative-regression-unknown-login-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-03-negative-regression-unknown-login-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                    "column": 21,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "091649cf49e61a48942e-5c4c7f6f5a854f1ee73d",
+          "file": "web/banking.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "WEB-04 @negative @regression required registration fields",
+          "ok": false,
+          "tags": [
+            "negative",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 312,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:24:14",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                      "column": 21,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-page.ts:8\n\n \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m open(path \u001b[33m=\u001b[39m \u001b[32m'index.htm'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m`/parabank/${path}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   }\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                        "column": 21,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at support\\bank-page.ts:8\n\n   6 |\n   7 |   async open(path = 'index.htm') {\n>  8 |     await this.page.goto(`/parabank/${path}`);\n     |                     ^\n   9 |   }\n  10 |\n  11 |   async login(username: string, password: string) {\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:24:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:52.540Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "final-page",
+                      "contentType": "image/png",
+                      "body": "iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAIAAABAH0oBAAAQAElEQVR4nOzXAQ0AIAzAsIfg3/LxwVoXvbs7AAAA8LszAAAAECDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMMAAAFAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAinmmqQAAAEdJREFUACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJDwAAAA///FxCTCAAAABklEQVQDAOhHCKDOc7AcAAAAAElFTkSuQmCC"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                    "column": 21,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "091649cf49e61a48942e-9b011975a4ab1dd5a696",
+          "file": "web/banking.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "WEB-05 @negative @regression mismatched password",
+          "ok": false,
+          "tags": [
+            "negative",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 375,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:32:14",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                      "column": 21,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-page.ts:8\n\n \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m open(path \u001b[33m=\u001b[39m \u001b[32m'index.htm'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m`/parabank/${path}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   }\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                        "column": 21,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at support\\bank-page.ts:8\n\n   6 |\n   7 |   async open(path = 'index.htm') {\n>  8 |     await this.page.goto(`/parabank/${path}`);\n     |                     ^\n   9 |   }\n  10 |\n  11 |   async login(username: string, password: string) {\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:32:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:53.664Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-05-negative-regression-mismatched-password-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "final-page",
+                      "contentType": "image/png",
+                      "body": "iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAIAAABAH0oBAAAQAElEQVR4nOzXAQ0AIAzAsIfg3/LxwVoXvbs7AAAA8LszAAAAECDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMMAAAFAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAinmmqQAAAEdJREFUACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJDwAAAA///FxCTCAAAABklEQVQDAOhHCKDOc7AcAAAAAElFTkSuQmCC"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-05-negative-regression-mismatched-password-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-05-negative-regression-mismatched-password-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-05-negative-regression-mismatched-password-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                    "column": 21,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "091649cf49e61a48942e-de42426c7b1119d8e1d4",
+          "file": "web/banking.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "WEB-06 @positive @regression registration, accounts, logout and login",
+          "ok": false,
+          "tags": [
+            "positive",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 316,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at BankPage.register (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:18:16)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:41:14",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                      "column": 21,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-page.ts:8\n\n \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m open(path \u001b[33m=\u001b[39m \u001b[32m'index.htm'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m`/parabank/${path}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   }\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                        "column": 21,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at support\\bank-page.ts:8\n\n   6 |\n   7 |   async open(path = 'index.htm') {\n>  8 |     await this.page.goto(`/parabank/${path}`);\n     |                     ^\n   9 |   }\n  10 |\n  11 |   async login(username: string, password: string) {\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at BankPage.register (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:18:16)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:41:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:54.753Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "final-page",
+                      "contentType": "image/png",
+                      "body": "iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAIAAABAH0oBAAAQAElEQVR4nOzXAQ0AIAzAsIfg3/LxwVoXvbs7AAAA8LszAAAAECDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMMAAAFAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAinmmqQAAAEdJREFUACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJDwAAAA///FxCTCAAAABklEQVQDAOhHCKDOc7AcAAAAAElFTkSuQmCC"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                    "column": 21,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "091649cf49e61a48942e-68b680e170c87c5ae246",
+          "file": "web/banking.spec.ts",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "WEB-07 @positive @regression public navigation",
+          "ok": false,
+          "tags": [
+            "positive",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 304,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:55:14",
+                    "location": {
+                      "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                      "column": 21,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\bank-page.ts:8\n\n \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m open(path \u001b[33m=\u001b[39m \u001b[32m'index.htm'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m`/parabank/${path}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   }\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                        "column": 21,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n\n   at support\\bank-page.ts:8\n\n   6 |\n   7 |   async open(path = 'index.htm') {\n>  8 |     await this.page.goto(`/parabank/${path}`);\n     |                     ^\n   9 |   }\n  10 |\n  11 |   async login(username: string, password: string) {\n    at BankPage.open (C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts:8:21)\n    at C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\web\\banking.spec.ts:55:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T17:58:55.868Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-07-positive-regression-public-navigation-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "final-page",
+                      "contentType": "image/png",
+                      "body": "iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAIAAABAH0oBAAAQAElEQVR4nOzXAQ0AIAzAsIfg3/LxwVoXvbs7AAAA8LszAAAAECDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMMAAAFAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJAgwAAAinmmqQAAAEdJREFUACQIMAAAAAkCDAAAQIIAAwAAkCDAAAAAJAgwAAAACQIMAABAggADAACQIMAAAAAkCDAAAAAJAgwAAECCAAMAAJDwAAAA///FxCTCAAAABklEQVQDAOhHCKDOc7AcAAAAAElFTkSuQmCC"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-07-positive-regression-public-navigation-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-07-positive-regression-public-navigation-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TOÑO\\Desktop\\Prueba\\reports\\latest\\artifacts\\web-banking-WEB-07-positive-regression-public-navigation-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TOÑO\\Desktop\\Prueba\\tests\\support\\bank-page.ts",
+                    "column": 21,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "091649cf49e61a48942e-b6c2f0e30d239287ad48",
+          "file": "web/banking.spec.ts",
+          "line": 54,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-16T17:58:42.904Z",
+    "duration": 14275.516,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 11,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "archivedAt": "2026-11-16T20:06:39.873Z",
+  "node": "v26.13.1",
+  "platform": "win32",
+  "baseURL": "https://parabank.parasoft.com",
+  "playwright": "1.65.1"
+}

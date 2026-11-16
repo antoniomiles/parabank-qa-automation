@@ -1,0 +1,11 @@
+{
+  "validatedAt": "2026-11-16T18:32:17.993Z",
+  "exitCode": 0,
+  "mode": "SaveService.loadTree y compilación Groovy; sin motor ni muestras",
+  "jmxSha512": "dbf2c651a8c5675297d75c550887137a050a6e4381fa37504bea50a00da485e24d28e4cc13bb0e32578d1b1c9331d9bf1f26f2dee43e4cbee47bd43194019bcd",
+  "archiveIntegrity": {
+    "sha512": "387fadca903ee0aa30e3f2115fdfedb3898b102e6b9fe7cc3942703094bd2e65b235df2b0c6d0d3248e74c9a7950a36e42625fd74425368342c12e40b0163076",
+    "matchesOfficialChecksum": true
+  },
+  "javaVersion": "openjdk version \"25.0.4.1\" 2026-08-18\r\nOpenJDK Runtime Environment JBR-25.0.4.1+1-635.79-nomod (build 25.0.4.1+1-b635.79)\r\nOpenJDK 64-Bit Server VM JBR-25.0.4.1+1-635.79-nomod (build 25.0.4.1+1-b635.79, mixed mode, sharing)"
+}

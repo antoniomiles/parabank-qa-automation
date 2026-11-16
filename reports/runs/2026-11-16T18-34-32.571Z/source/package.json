@@ -1,0 +1,26 @@
+{
+  "name": "parabank-qa-practice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:web": "playwright test --project=chromium",
+    "test:api": "playwright test --project=api",
+    "test:smoke": "playwright test --grep @smoke",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report reports/latest/html",
+    "archive": "node scripts/archive.mjs",
+    "verify:local": "node scripts/verify-local.mjs",
+    "audit:evidence": "node scripts/audit-evidence.mjs",
+    "requirements:extract": "node scripts/extract-requirements.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^24.0.0",
+    "@xmldom/xmldom": "^0.9.12",
+    "csv-parse": "^7.0.3",
+    "pdfjs-dist": "^6.5.438",
+    "typescript": "^5.9.0",
+    "yaml": "^2.9.1"
+  }
+}

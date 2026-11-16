@@ -1,0 +1,21 @@
+{
+  "name": "parabank-qa-practice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:web": "playwright test --project=chromium",
+    "test:api": "playwright test --project=api",
+    "test:smoke": "playwright test --grep @smoke",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report reports/latest/html",
+    "archive": "node scripts/archive.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^24.0.0",
+    "pdfjs-dist": "^6.5.438",
+    "typescript": "^5.9.0",
+    "yaml": "^2.9.1"
+  }
+}

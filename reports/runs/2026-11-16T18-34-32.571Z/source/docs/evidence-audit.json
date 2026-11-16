@@ -1,0 +1,1547 @@
+{
+  "checkedAt": "2026-11-16T18:33:43.101Z",
+  "scope": "Integridad local; firmas y existencia, no certificación de autenticidad externa ni reproducción de vídeos.",
+  "latest": {
+    "directory": "reports/latest",
+    "stats": {
+      "startTime": "2026-11-16T18:31:42.155Z",
+      "duration": 69340.58099999999,
+      "expected": 17,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "total": 19,
+    "junitFailures": 2,
+    "junitErrors": 0,
+    "projects": {
+      "api": 5,
+      "chromium": 14
+    },
+    "failures": [
+      "PAY-04 @negative @regression reject amount 0",
+      "PAY-05 @negative @regression reject amount -1"
+    ],
+    "attachments": 67,
+    "screenshots": 17,
+    "manifest": [
+      {
+        "file": "artifacts/.last-run.json",
+        "bytes": 145,
+        "sha256": "d578c6e4f8d4856d69cf7d60d52d694edea20d2eaa9fa71a3131f375186e43ee"
+      },
+      {
+        "file": "artifacts/web-payments-PAY-04-negative-regression-reject-amount-0-chromium/error-context.md",
+        "bytes": 6980,
+        "sha256": "32ca7ae62a292a039c3fdcdf72823865ddccd78f6ed36ee5a9564763a68b4475"
+      },
+      {
+        "file": "artifacts/web-payments-PAY-04-negative-regression-reject-amount-0-chromium/test-failed-1.png",
+        "bytes": 106632,
+        "sha256": "2a629226463c948ca53cd64200934c42dff9aa5c62658980d3edc30b2f7b9708"
+      },
+      {
+        "file": "artifacts/web-payments-PAY-04-negative-regression-reject-amount-0-chromium/trace.zip",
+        "bytes": 2312356,
+        "sha256": "2fd5309935e58633294ffe0375f79d615248c7e068d93d5106dee85a7bcf200d"
+      },
+      {
+        "file": "artifacts/web-payments-PAY-04-negative-regression-reject-amount-0-chromium/video.webm",
+        "bytes": 787814,
+        "sha256": "153bccef77433c074108e518da6a2ca94bc0a6ae036212bad198506c35f4868a"
+      },
+      {
+        "file": "artifacts/web-payments-PAY-05-negative-regression-reject-amount--1-chromium/error-context.md",
+        "bytes": 7085,
+        "sha256": "17f87e9b77e5e1a9c1534a3c42c800b85c5b2e852a95073c611e31710d72d496"
+      },
+      {
+        "file": "artifacts/web-payments-PAY-05-negative-regression-reject-amount--1-chromium/test-failed-1.png",
+        "bytes": 106747,
+        "sha256": "12a86df6ec7c786cf5c6d3f0ad7724c431630a5f4847363868961a969af61cd7"
+      },
+      {
+        "file": "artifacts/web-payments-PAY-05-negative-regression-reject-amount--1-chromium/trace.zip",
+        "bytes": 2373778,
+        "sha256": "1ee7d8ded82e50dd9f2f36b154ddacce6a4fca3d53390cb69c312434ea33b01d"
+      },
+      {
+        "file": "artifacts/web-payments-PAY-05-negative-regression-reject-amount--1-chromium/video.webm",
+        "bytes": 772162,
+        "sha256": "7620d906d844cb96fb3b73e6e266f614b3304502325f1035fa3234d3b92d1561"
+      },
+      {
+        "file": "html/data/0afaf370ff0ac750e5598756670cb67f1cb877ae.png",
+        "bytes": 106778,
+        "sha256": "88b5902ed05828386bb4e3a20992bdbbea5a6a90226153f4cf6d96e6e7928148"
+      },
+      {
+        "file": "html/data/19f4ed4ec66977c5c7cbed4d9343381bbebb3ac7.png",
+        "bytes": 106747,
+        "sha256": "12a86df6ec7c786cf5c6d3f0ad7724c431630a5f4847363868961a969af61cd7"
+      },
+      {
+        "file": "html/data/1dbd48ac112a3d4261ccdf4e86ccc332260e4c38.png",
+        "bytes": 108851,
+        "sha256": "6f330b2ecaa10a79b3501a7998f7f6d2fe7edca5274acdc4e8cb4b1b03574b94"
+      },
+      {
+        "file": "html/data/3cc3b131036e4474e27540dd7d5da1806832bd66.png",
+        "bytes": 112061,
+        "sha256": "1dbd87fe1dd17a9d8fe22d2a8a97182c9b9acbe30d6b1e121dbd44f4d93d9ccd"
+      },
+      {
+        "file": "html/data/3d70d4a53d15f38867ec80e3bbe0fa1deb6adbb3.png",
+        "bytes": 123879,
+        "sha256": "3a2adfac23d68cbf26ad8b5a7b012a9a1eba76f82ce760b09e6518f6f8af3f17"
+      },
+      {
+        "file": "html/data/461d574f57b4228604a0215d525e475bd5c3ef5a.webm",
+        "bytes": 787814,
+        "sha256": "153bccef77433c074108e518da6a2ca94bc0a6ae036212bad198506c35f4868a"
+      },
+      {
+        "file": "html/data/48e2f698c08c658dc7109da38defdf40c71d5edd.webm",
+        "bytes": 772162,
+        "sha256": "7620d906d844cb96fb3b73e6e266f614b3304502325f1035fa3234d3b92d1561"
+      },
+      {
+        "file": "html/data/4931b8a9095841bb9ba3f3f438974c9344975b93.png",
+        "bytes": 122015,
+        "sha256": "88cc3c9e706254133c67155d8fe1a7bffc8704277ae879ca232e772e16d30062"
+      },
+      {
+        "file": "html/data/4ba35cea0ed3545b8e8fc3fb81c3fe36bb16a513.md",
+        "bytes": 6980,
+        "sha256": "32ca7ae62a292a039c3fdcdf72823865ddccd78f6ed36ee5a9564763a68b4475"
+      },
+      {
+        "file": "html/data/5c49b3a14ccc0b4dcf78815c75f98f2e4fd2126f.zip",
+        "bytes": 2373778,
+        "sha256": "1ee7d8ded82e50dd9f2f36b154ddacce6a4fca3d53390cb69c312434ea33b01d"
+      },
+      {
+        "file": "html/data/749a8921ea57d36ef586f398fd60fe445c11b7c5.png",
+        "bytes": 116364,
+        "sha256": "504f7c2dfbe441a9c306e6b807a48be9a81e3b4f3b72078a2f05f90ef7f986e5"
+      },
+      {
+        "file": "html/data/7e7a016b914c3a6fe89c679fd4e4184fc4be9d8b.png",
+        "bytes": 121668,
+        "sha256": "325d75cd626529a0dfd255ec1200d334b5ac6445ea812d37ef3dc29d0a897e53"
+      },
+      {
+        "file": "html/data/a43d65e1ae82f78150bc9246c028eff486a49493.png",
+        "bytes": 107392,
+        "sha256": "62b3ec29b64d2886ea20a6b41f63a7bcffd005b86dfe10b280c813944ac25d42"
+      },
+      {
+        "file": "html/data/a84a78995697638a2b5ba31b1841c13e47ff259e.png",
+        "bytes": 96972,
+        "sha256": "744c81587411a552c20d5317f82790cfba97360c6bafe24b615aa0faf49a99e9"
+      },
+      {
+        "file": "html/data/aebbc3c5d7f54f61e6072dabb4372f7bed66664f.png",
+        "bytes": 124555,
+        "sha256": "e6ea9bf1fb6c7f34dce8f5275eaa6892b1d964b4c7d16342923e6df9403b3bd6"
+      },
+      {
+        "file": "html/data/af490f516162d2a998e8b80cf65eea888b42394b.png",
+        "bytes": 106632,
+        "sha256": "2a629226463c948ca53cd64200934c42dff9aa5c62658980d3edc30b2f7b9708"
+      },
+      {
+        "file": "html/data/b7347fac7935222e34327d6e849e29cda78562a7.md",
+        "bytes": 7085,
+        "sha256": "17f87e9b77e5e1a9c1534a3c42c800b85c5b2e852a95073c611e31710d72d496"
+      },
+      {
+        "file": "html/data/c81a2b53305f10045e92be0a46f528212b2f36b4.png",
+        "bytes": 96729,
+        "sha256": "a5497d6eb084a51f29ed2e5f08e6c3d34d3d7f1387c832d008f0eef739f74456"
+      },
+      {
+        "file": "html/data/d09096ada81e3a4f541e5f26acb754ae5b1969ed.png",
+        "bytes": 195935,
+        "sha256": "271cd97e7312b47ada9cefa892fbc30d7c10158c856b898a3219039cff03d513"
+      },
+      {
+        "file": "html/data/e25b036df8494092b8c7b5876df088d65c32e04a.png",
+        "bytes": 96915,
+        "sha256": "47462abf4a961a6095000ff863de714beb9bd066bfc40417ebdafecec306b830"
+      },
+      {
+        "file": "html/data/fc323c30803ad1c97d37c8e93237420d14b19d82.zip",
+        "bytes": 2312356,
+        "sha256": "2fd5309935e58633294ffe0375f79d615248c7e068d93d5106dee85a7bcf200d"
+      },
+      {
+        "file": "html/index.html",
+        "bytes": 571310,
+        "sha256": "d5ccb1f98083c33e00fe61df98e73c23e48cc7f66666eaf4ffd2ae1dc401c424"
+      },
+      {
+        "file": "html/trace/assets/codeMirrorModule-DNqxPF-E.js",
+        "bytes": 307383,
+        "sha256": "53102e1a7795f44c51b4f4172f9493d94922892a1f5cefe31edf50278e0b89cd"
+      },
+      {
+        "file": "html/trace/assets/defaultSettingsView-BQT9Z6FV.js",
+        "bytes": 669380,
+        "sha256": "807a114bcf1e58a0f46a931b42ae3b94b1ba049d3d6a308f869dea12e9d15034"
+      },
+      {
+        "file": "html/trace/assets/rolldown-runtime-QTnfLwEv.js",
+        "bytes": 694,
+        "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75"
+      },
+      {
+        "file": "html/trace/assets/urlMatch-Cgl6axSs.js",
+        "bytes": 806,
+        "sha256": "2d35d162cc21790c6adc218fbd1c3ef77865646b50f60157e04715f48974d182"
+      },
+      {
+        "file": "html/trace/codeMirrorModule.-QdMvsKi.css",
+        "bytes": 6251,
+        "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+      },
+      {
+        "file": "html/trace/codicon.DCmgc-ay.ttf",
+        "bytes": 80340,
+        "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+      },
+      {
+        "file": "html/trace/defaultSettingsView.C8BeHuxd.css",
+        "bytes": 107270,
+        "sha256": "278101b68ab48ee6323a6afbf4e0e629324e10e96902a62a0875643a1bba3d94"
+      },
+      {
+        "file": "html/trace/index.BY2vkw8A.js",
+        "bytes": 6642,
+        "sha256": "03747a9e732da1e50a15438830d0e98c791c8df4f7efea49dd24f628951bc77f"
+      },
+      {
+        "file": "html/trace/index.B_TqY17P.css",
+        "bytes": 2055,
+        "sha256": "08a212fcacae1866f44f065654afcc4c7d03409c68c74b3315c5bda17a0ca003"
+      },
+      {
+        "file": "html/trace/index.html",
+        "bytes": 2451,
+        "sha256": "8c62d0abbc39be5ecbfa799cdfd181a53d92f93c08c8bfbe622c2e96fece9a95"
+      },
+      {
+        "file": "html/trace/manifest.webmanifest",
+        "bytes": 429,
+        "sha256": "d8540500603a32a39fe7e5a0375dc0f9ebafd11118e06a846db7efc608223ab9"
+      },
+      {
+        "file": "html/trace/playwright-logo.svg",
+        "bytes": 5033,
+        "sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9"
+      },
+      {
+        "file": "html/trace/snapshot.-ChLTbql.js",
+        "bytes": 650,
+        "sha256": "339b2b5c67ef769f60fe959f78a3cfa42b2b8833e30f19cd32bf5194efe833b6"
+      },
+      {
+        "file": "html/trace/snapshot.html",
+        "bytes": 389,
+        "sha256": "7b889f89c715eadd359d10462e3d8b6292cc632a7a86de75b07e8fc9934d1972"
+      },
+      {
+        "file": "html/trace/sw.bundle.js",
+        "bytes": 96720,
+        "sha256": "f2a3172345fbf372075d51204139002fe80dc573714a5c7508b581c049f94aca"
+      },
+      {
+        "file": "html/trace/uiMode.CyMfwkXJ.css",
+        "bytes": 54590,
+        "sha256": "fb403cf0b07007bc1d771e29737f7408924da300e2fab8b289a3ef2e8fc08d7b"
+      },
+      {
+        "file": "html/trace/uiMode.DuLwZHRf.js",
+        "bytes": 37909,
+        "sha256": "185efd95559d290f77cb5bb7c4efd58aeb8f0f74a5ae0b31d40d7a5413f0314c"
+      },
+      {
+        "file": "html/trace/uiMode.html",
+        "bytes": 815,
+        "sha256": "777b88825dacada77675168a4b44e17406992b85c7245cdde8588012cc42ba8b"
+      },
+      {
+        "file": "html/trace/xtermModule.kHJ-D0s7.css",
+        "bytes": 2853,
+        "sha256": "0dd60056134e6a2994a86b59a1e9789b9f04e92924da109aef8c923acaf08ce5"
+      },
+      {
+        "file": "junit.xml",
+        "bytes": 13464,
+        "sha256": "ceb6ce812def45ae9607229d61a08d1570de104c892286df1c654bf75c8c3894"
+      },
+      {
+        "file": "results.json",
+        "bytes": 2425262,
+        "sha256": "c664f6622094dc8d5869e294344fddbd02a14b2877722787799178bf97cdd485"
+      }
+    ]
+  },
+  "runs": [
+    {
+      "directory": "reports/runs/2026-11-16T17-59-01.950Z",
+      "stats": {
+        "startTime": "2026-11-16T17:58:42.904Z",
+        "duration": 14275.516,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 11,
+        "flaky": 0
+      },
+      "total": 11,
+      "junitFailures": 0,
+      "junitErrors": 11,
+      "projects": {
+        "api": 4,
+        "chromium": 7
+      },
+      "failures": [
+        "API-01 @smoke @positive service status",
+        "API-02 @negative @regression invalid credentials",
+        "API-03 @negative @regression nonexistent account",
+        "API-04 @positive @regression customer and accounts contract",
+        "WEB-01 @smoke @positive public home",
+        "WEB-02 @negative @regression empty login",
+        "WEB-03 @negative @regression unknown login",
+        "WEB-04 @negative @regression required registration fields",
+        "WEB-05 @negative @regression mismatched password",
+        "WEB-06 @positive @regression registration, accounts, logout and login",
+        "WEB-07 @positive @regression public navigation"
+      ],
+      "attachments": 44,
+      "screenshots": 15,
+      "manifest": [
+        {
+          "file": "artifacts/.last-run.json",
+          "bytes": 586,
+          "sha256": "4ffe5b7386b20f929a98b7f57a31a90dbe70303f7a11ab2408e464a62d1f115e"
+        },
+        {
+          "file": "artifacts/api-bank-API-01-smoke-positive-service-status-api/error-context.md",
+          "bytes": 1558,
+          "sha256": "04b1600c84b2655bb69d0634f7855a82ad1b36a413acb1a65912cf3136cb16bc"
+        },
+        {
+          "file": "artifacts/api-bank-API-01-smoke-positive-service-status-api/trace.zip",
+          "bytes": 5532,
+          "sha256": "58b3666c930acdb0d814c6a13268ad71ef987827f5cd2ccfd9e57d6eaac69413"
+        },
+        {
+          "file": "artifacts/api-bank-API-02-negative-regression-invalid-credentials-api/error-context.md",
+          "bytes": 1597,
+          "sha256": "3f3db8c45c41abea0345b76b590d7075d318f097b431f2b4da190e12f63271aa"
+        },
+        {
+          "file": "artifacts/api-bank-API-02-negative-regression-invalid-credentials-api/trace.zip",
+          "bytes": 5647,
+          "sha256": "40a9c2a07f213541b34d45a8d5f2920cdd679ca657686221038e6a049b94c1d5"
+        },
+        {
+          "file": "artifacts/api-bank-API-03-negative-regression-nonexistent-account-api/error-context.md",
+          "bytes": 1582,
+          "sha256": "d6f5ee4561bbfa0b76136869c1604a257f106cab37a521dfdf40d0ece1c9fb4a"
+        },
+        {
+          "file": "artifacts/api-bank-API-03-negative-regression-nonexistent-account-api/trace.zip",
+          "bytes": 5608,
+          "sha256": "c6a19051cc91a5fd7e3fe371f5a8fd9255bf491f9773abc17108d74a08f021e9"
+        },
+        {
+          "file": "artifacts/api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api/error-context.md",
+          "bytes": 2502,
+          "sha256": "0f1c589554aec96168dc18cdf90410fd15eeb370b82ad96285bb3a4c733a7964"
+        },
+        {
+          "file": "artifacts/api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api/test-failed-1.png",
+          "bytes": 4254,
+          "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+        },
+        {
+          "file": "artifacts/api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api/trace.zip",
+          "bytes": 8741,
+          "sha256": "271cb73fddc6be54e6f73f56773cba99838676a5c9804fb341ca47d5e7783611"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-01-smoke-positive-public-home-chromium/error-context.md",
+          "bytes": 2474,
+          "sha256": "d99009d89925bf738aa96b957e53190f71da5c55e1757ad6baf8cdca584cff0b"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-01-smoke-positive-public-home-chromium/test-failed-1.png",
+          "bytes": 4254,
+          "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-01-smoke-positive-public-home-chromium/trace.zip",
+          "bytes": 11486,
+          "sha256": "19e81e40743948d3dcefbeca3e59c399d3c48d50d5d0f2577a5ccc4c77b484da"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-01-smoke-positive-public-home-chromium/video.webm",
+          "bytes": 1515,
+          "sha256": "12c83348fe525fa990f2523f9dcc03527e3302d8c575a9544e434c91187bc95c"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-02-negative-regression-empty-login-chromium/error-context.md",
+          "bytes": 2480,
+          "sha256": "161ae2246e916bc5850e68d18a4899e5eb9f5aab3b416149222788e5260112b6"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-02-negative-regression-empty-login-chromium/test-failed-1.png",
+          "bytes": 4254,
+          "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-02-negative-regression-empty-login-chromium/trace.zip",
+          "bytes": 11500,
+          "sha256": "29c608251f2f9689e5398e80792dcfbb2c2989d30ea5bbea734b79b47448496e"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-02-negative-regression-empty-login-chromium/video.webm",
+          "bytes": 1515,
+          "sha256": "c257e6c2fbc1359a77714e422c4beb71acfed464a4f7770811675f547c7f9cff"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-03-negative-regression-unknown-login-chromium/error-context.md",
+          "bytes": 2482,
+          "sha256": "d3dab56a6f346fea638d1ae6719aa68d4b4d74283d0ae01167f6552049ebaa1a"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-03-negative-regression-unknown-login-chromium/test-failed-1.png",
+          "bytes": 4254,
+          "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-03-negative-regression-unknown-login-chromium/trace.zip",
+          "bytes": 11489,
+          "sha256": "62361d59d400c51bddbd9f1f5af5922fa49ae77682ebd0647fa71427cbfd591d"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-03-negative-regression-unknown-login-chromium/video.webm",
+          "bytes": 1515,
+          "sha256": "8feb573e39da960fdef8e4ad668815145537526d76835b6bf437d047bef47c2d"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium/error-context.md",
+          "bytes": 2506,
+          "sha256": "2bd5f96593d667ecaf4fbe7a7f15d9f821a1e1af0c662a073ea1b1681886df5c"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium/test-failed-1.png",
+          "bytes": 4254,
+          "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium/trace.zip",
+          "bytes": 11526,
+          "sha256": "d12b5057d672871ad1a922d989917ac7529c8f68629ae31bce7d8b755e265b4c"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium/video.webm",
+          "bytes": 1515,
+          "sha256": "bff36ed0a8714ca39a9be69cb8991528c26b566f6c5cbc214ebc7abf191f8a5f"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-05-negative-regression-mismatched-password-chromium/error-context.md",
+          "bytes": 2497,
+          "sha256": "20e214465bb3f3b3232457c8b69da59f95238e7f4d21d8adb50559824649865f"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-05-negative-regression-mismatched-password-chromium/test-failed-1.png",
+          "bytes": 4254,
+          "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-05-negative-regression-mismatched-password-chromium/trace.zip",
+          "bytes": 11530,
+          "sha256": "cfc0c9b17c4048535868e4453c920db31ee3168ca9829daf980af0b606b3f727"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-05-negative-regression-mismatched-password-chromium/video.webm",
+          "bytes": 1515,
+          "sha256": "2222218a4f9bee66226d8ebb83cb4822133f7a14c600d9246e1a54da2cab9a31"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium/error-context.md",
+          "bytes": 2518,
+          "sha256": "eb23400b063b8c634b6983441725dfa6a1f619f7474f5f930cb2dc4302e1097f"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium/test-failed-1.png",
+          "bytes": 4254,
+          "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium/trace.zip",
+          "bytes": 11596,
+          "sha256": "a4e767f7cb131f427a098d28a88dde43c76efb4e02972e02da7be5dc33624f0d"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium/video.webm",
+          "bytes": 1515,
+          "sha256": "e677ed9d4693f5c46aecda610355427e6629f7ec6c039c1db6a923bde5db8ca8"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-07-positive-regression-public-navigation-chromium/error-context.md",
+          "bytes": 2486,
+          "sha256": "42abb5d7b1f516ceb549dc7b1bb94bfcdba1d3f4d82b800894cfd19a3bf5f76b"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-07-positive-regression-public-navigation-chromium/test-failed-1.png",
+          "bytes": 4254,
+          "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-07-positive-regression-public-navigation-chromium/trace.zip",
+          "bytes": 11493,
+          "sha256": "fcbb979be8f801539d26e85fce96bf829d050a5c62031c4ef90c4bfefed369f4"
+        },
+        {
+          "file": "artifacts/web-banking-WEB-07-positive-regression-public-navigation-chromium/video.webm",
+          "bytes": 1515,
+          "sha256": "fb23b8e64ea9ba5fc14e4ba46dd44887e9a57c542802aa27bc200f885571a023"
+        },
+        {
+          "file": "environment.json",
+          "bytes": 163,
+          "sha256": "849c12ea9a190a738e2bfc4c527bd3bf9768eda2a6f38a285100e9bd88b26751"
+        },
+        {
+          "file": "html/data/00768512bff8bee5f6f1a3adf4d51a944a2a1630.zip",
+          "bytes": 11500,
+          "sha256": "29c608251f2f9689e5398e80792dcfbb2c2989d30ea5bbea734b79b47448496e"
+        },
+        {
+          "file": "html/data/05789bf61a7e31495ed18eaa5d4df3e889f53f19.md",
+          "bytes": 1558,
+          "sha256": "04b1600c84b2655bb69d0634f7855a82ad1b36a413acb1a65912cf3136cb16bc"
+        },
+        {
+          "file": "html/data/05967f093f708d030097464775a5ffadb8b536ef.webm",
+          "bytes": 1515,
+          "sha256": "bff36ed0a8714ca39a9be69cb8991528c26b566f6c5cbc214ebc7abf191f8a5f"
+        },
+        {
+          "file": "html/data/0da2c5b82bbb81abfbe4dd9eed4a7cb383b86eb7.webm",
+          "bytes": 1515,
+          "sha256": "8feb573e39da960fdef8e4ad668815145537526d76835b6bf437d047bef47c2d"
+        },
+        {
+          "file": "html/data/12515c92737f41470f68341152f711613de3b64b.zip",
+          "bytes": 11530,
+          "sha256": "cfc0c9b17c4048535868e4453c920db31ee3168ca9829daf980af0b606b3f727"
+        },
+        {
+          "file": "html/data/2c6801fbbe6e09e0edaad09c5bcf2441bd87ce39.zip",
+          "bytes": 5647,
+          "sha256": "40a9c2a07f213541b34d45a8d5f2920cdd679ca657686221038e6a049b94c1d5"
+        },
+        {
+          "file": "html/data/2dffb80560b135908f2a098dea2c04194981881e.webm",
+          "bytes": 1515,
+          "sha256": "e677ed9d4693f5c46aecda610355427e6629f7ec6c039c1db6a923bde5db8ca8"
+        },
+        {
+          "file": "html/data/33a867997ab84abbfa99638006b7b4728b409691.zip",
+          "bytes": 11486,
+          "sha256": "19e81e40743948d3dcefbeca3e59c399d3c48d50d5d0f2577a5ccc4c77b484da"
+        },
+        {
+          "file": "html/data/38071964dafa4e539b9b8e8a2944bc04219d7d7b.zip",
+          "bytes": 5608,
+          "sha256": "c6a19051cc91a5fd7e3fe371f5a8fd9255bf491f9773abc17108d74a08f021e9"
+        },
+        {
+          "file": "html/data/42657c90dc7065bae17814d33da7593d90d68572.md",
+          "bytes": 2518,
+          "sha256": "eb23400b063b8c634b6983441725dfa6a1f619f7474f5f930cb2dc4302e1097f"
+        },
+        {
+          "file": "html/data/51ca312315b9f675e89ca46a699301a501bb035f.zip",
+          "bytes": 11489,
+          "sha256": "62361d59d400c51bddbd9f1f5af5922fa49ae77682ebd0647fa71427cbfd591d"
+        },
+        {
+          "file": "html/data/51da4abff129e76e469bd5f02847e440b54dee62.md",
+          "bytes": 2486,
+          "sha256": "42abb5d7b1f516ceb549dc7b1bb94bfcdba1d3f4d82b800894cfd19a3bf5f76b"
+        },
+        {
+          "file": "html/data/58868afe9a29c27d29d665d0438b54ffb332d52e.md",
+          "bytes": 1582,
+          "sha256": "d6f5ee4561bbfa0b76136869c1604a257f106cab37a521dfdf40d0ece1c9fb4a"
+        },
+        {
+          "file": "html/data/78485ad26ab49de2007fe98b0854715a58aaf5b6.png",
+          "bytes": 4254,
+          "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+        },
+        {
+          "file": "html/data/8374d521d200fe92320107bbb8d9440054e01e0a.webm",
+          "bytes": 1515,
+          "sha256": "fb23b8e64ea9ba5fc14e4ba46dd44887e9a57c542802aa27bc200f885571a023"
+        },
+        {
+          "file": "html/data/8d1a53ab19b80676c88b3bd60b427009cd72475a.md",
+          "bytes": 2482,
+          "sha256": "d3dab56a6f346fea638d1ae6719aa68d4b4d74283d0ae01167f6552049ebaa1a"
+        },
+        {
+          "file": "html/data/8ed1cdaab8b4c28d4d587b1b8e54f83e1fd2413a.zip",
+          "bytes": 11596,
+          "sha256": "a4e767f7cb131f427a098d28a88dde43c76efb4e02972e02da7be5dc33624f0d"
+        },
+        {
+          "file": "html/data/adeb4233dcdef6c0238b73d50920c04ab1b02510.zip",
+          "bytes": 8741,
+          "sha256": "271cb73fddc6be54e6f73f56773cba99838676a5c9804fb341ca47d5e7783611"
+        },
+        {
+          "file": "html/data/b3ab7a102f9a2a2f9e6be120f2069bacbaaf5781.md",
+          "bytes": 2502,
+          "sha256": "0f1c589554aec96168dc18cdf90410fd15eeb370b82ad96285bb3a4c733a7964"
+        },
+        {
+          "file": "html/data/b4bcb3e82d97132447b053699b6f6acdaf97a8bd.webm",
+          "bytes": 1515,
+          "sha256": "12c83348fe525fa990f2523f9dcc03527e3302d8c575a9544e434c91187bc95c"
+        },
+        {
+          "file": "html/data/c2862fe905591072d6091304487095cda6148b4c.md",
+          "bytes": 2480,
+          "sha256": "161ae2246e916bc5850e68d18a4899e5eb9f5aab3b416149222788e5260112b6"
+        },
+        {
+          "file": "html/data/c62b1dda2e87a823fe261675f3b9c8696be23fa1.md",
+          "bytes": 2497,
+          "sha256": "20e214465bb3f3b3232457c8b69da59f95238e7f4d21d8adb50559824649865f"
+        },
+        {
+          "file": "html/data/cb95bbf9b34e82bcff3380dc035e3c47fdaa99b4.zip",
+          "bytes": 5532,
+          "sha256": "58b3666c930acdb0d814c6a13268ad71ef987827f5cd2ccfd9e57d6eaac69413"
+        },
+        {
+          "file": "html/data/cbef49633d21f25e649a9d9279e08b7675ae2976.md",
+          "bytes": 1597,
+          "sha256": "3f3db8c45c41abea0345b76b590d7075d318f097b431f2b4da190e12f63271aa"
+        },
+        {
+          "file": "html/data/cc71cc4305703892578187173d57902c8880b4c1.md",
+          "bytes": 2506,
+          "sha256": "2bd5f96593d667ecaf4fbe7a7f15d9f821a1e1af0c662a073ea1b1681886df5c"
+        },
+        {
+          "file": "html/data/db77857b20e002c378cdfc74744f19cea39225f7.webm",
+          "bytes": 1515,
+          "sha256": "2222218a4f9bee66226d8ebb83cb4822133f7a14c600d9246e1a54da2cab9a31"
+        },
+        {
+          "file": "html/data/dfc08e2924ecf6687db74f8f578186bf8bc0e1f8.zip",
+          "bytes": 11526,
+          "sha256": "d12b5057d672871ad1a922d989917ac7529c8f68629ae31bce7d8b755e265b4c"
+        },
+        {
+          "file": "html/data/e79fa5908c156b6b766220be2652a51473cb72fe.zip",
+          "bytes": 11493,
+          "sha256": "fcbb979be8f801539d26e85fce96bf829d050a5c62031c4ef90c4bfefed369f4"
+        },
+        {
+          "file": "html/data/f866d1c046b88c2fb5c847485a537543ada04ad1.md",
+          "bytes": 2474,
+          "sha256": "d99009d89925bf738aa96b957e53190f71da5c55e1757ad6baf8cdca584cff0b"
+        },
+        {
+          "file": "html/data/fedef126ad0bb5c9ba1996d58a055bbd18770173.webm",
+          "bytes": 1515,
+          "sha256": "c257e6c2fbc1359a77714e422c4beb71acfed464a4f7770811675f547c7f9cff"
+        },
+        {
+          "file": "html/index.html",
+          "bytes": 531598,
+          "sha256": "d657cea7736d81a40a75374530c871feea077933ce6d6d368f18f98b78bb7fff"
+        },
+        {
+          "file": "html/trace/assets/codeMirrorModule-DNqxPF-E.js",
+          "bytes": 307383,
+          "sha256": "53102e1a7795f44c51b4f4172f9493d94922892a1f5cefe31edf50278e0b89cd"
+        },
+        {
+          "file": "html/trace/assets/defaultSettingsView-BQT9Z6FV.js",
+          "bytes": 669380,
+          "sha256": "807a114bcf1e58a0f46a931b42ae3b94b1ba049d3d6a308f869dea12e9d15034"
+        },
+        {
+          "file": "html/trace/assets/rolldown-runtime-QTnfLwEv.js",
+          "bytes": 694,
+          "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75"
+        },
+        {
+          "file": "html/trace/assets/urlMatch-Cgl6axSs.js",
+          "bytes": 806,
+          "sha256": "2d35d162cc21790c6adc218fbd1c3ef77865646b50f60157e04715f48974d182"
+        },
+        {
+          "file": "html/trace/codeMirrorModule.-QdMvsKi.css",
+          "bytes": 6251,
+          "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+        },
+        {
+          "file": "html/trace/codicon.DCmgc-ay.ttf",
+          "bytes": 80340,
+          "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+        },
+        {
+          "file": "html/trace/defaultSettingsView.C8BeHuxd.css",
+          "bytes": 107270,
+          "sha256": "278101b68ab48ee6323a6afbf4e0e629324e10e96902a62a0875643a1bba3d94"
+        },
+        {
+          "file": "html/trace/index.BY2vkw8A.js",
+          "bytes": 6642,
+          "sha256": "03747a9e732da1e50a15438830d0e98c791c8df4f7efea49dd24f628951bc77f"
+        },
+        {
+          "file": "html/trace/index.B_TqY17P.css",
+          "bytes": 2055,
+          "sha256": "08a212fcacae1866f44f065654afcc4c7d03409c68c74b3315c5bda17a0ca003"
+        },
+        {
+          "file": "html/trace/index.html",
+          "bytes": 2451,
+          "sha256": "8c62d0abbc39be5ecbfa799cdfd181a53d92f93c08c8bfbe622c2e96fece9a95"
+        },
+        {
+          "file": "html/trace/manifest.webmanifest",
+          "bytes": 429,
+          "sha256": "d8540500603a32a39fe7e5a0375dc0f9ebafd11118e06a846db7efc608223ab9"
+        },
+        {
+          "file": "html/trace/playwright-logo.svg",
+          "bytes": 5033,
+          "sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9"
+        },
+        {
+          "file": "html/trace/snapshot.-ChLTbql.js",
+          "bytes": 650,
+          "sha256": "339b2b5c67ef769f60fe959f78a3cfa42b2b8833e30f19cd32bf5194efe833b6"
+        },
+        {
+          "file": "html/trace/snapshot.html",
+          "bytes": 389,
+          "sha256": "7b889f89c715eadd359d10462e3d8b6292cc632a7a86de75b07e8fc9934d1972"
+        },
+        {
+          "file": "html/trace/sw.bundle.js",
+          "bytes": 96720,
+          "sha256": "f2a3172345fbf372075d51204139002fe80dc573714a5c7508b581c049f94aca"
+        },
+        {
+          "file": "html/trace/uiMode.CyMfwkXJ.css",
+          "bytes": 54590,
+          "sha256": "fb403cf0b07007bc1d771e29737f7408924da300e2fab8b289a3ef2e8fc08d7b"
+        },
+        {
+          "file": "html/trace/uiMode.DuLwZHRf.js",
+          "bytes": 37909,
+          "sha256": "185efd95559d290f77cb5bb7c4efd58aeb8f0f74a5ae0b31d40d7a5413f0314c"
+        },
+        {
+          "file": "html/trace/uiMode.html",
+          "bytes": 815,
+          "sha256": "777b88825dacada77675168a4b44e17406992b85c7245cdde8588012cc42ba8b"
+        },
+        {
+          "file": "html/trace/xtermModule.kHJ-D0s7.css",
+          "bytes": 2853,
+          "sha256": "0dd60056134e6a2994a86b59a1e9789b9f04e92924da109aef8c923acaf08ce5"
+        },
+        {
+          "file": "junit.xml",
+          "bytes": 36595,
+          "sha256": "6b0265d3b3cb4bc9b273cae18486cdfab5cfa3e06d0d88c76beb8b92af376ce2"
+        },
+        {
+          "file": "results.json",
+          "bytes": 106851,
+          "sha256": "3bb883637b5a80bec6a0359f1d5e9e4b87b5e57b16699bc0d374238ba4cdfb87"
+        }
+      ]
+    },
+    {
+      "directory": "reports/runs/2026-11-16T17-59-41.892Z",
+      "stats": {
+        "startTime": "2026-11-16T17:59:05.787Z",
+        "duration": 19836.422,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "total": 11,
+      "junitFailures": 2,
+      "junitErrors": 0,
+      "projects": {
+        "api": 4,
+        "chromium": 7
+      },
+      "failures": [
+        "API-01 @smoke @positive service status",
+        "API-03 @negative @regression nonexistent account"
+      ],
+      "attachments": 17,
+      "screenshots": 7,
+      "manifest": [
+        {
+          "file": "artifacts/.last-run.json",
+          "bytes": 145,
+          "sha256": "c18ef21fc52fbf49acc32dd83de93a3235e9b600a12782c5c23da46814d79e89"
+        },
+        {
+          "file": "artifacts/api-bank-API-01-smoke-positive-service-status-api/error-context.md",
+          "bytes": 3441,
+          "sha256": "b5ace3e95d26356095613fcaf432b974d232e4c18fdb2e968e1611913c3929e7"
+        },
+        {
+          "file": "artifacts/api-bank-API-01-smoke-positive-service-status-api/trace.zip",
+          "bytes": 7362,
+          "sha256": "a05111638c26b5523933f9453c1b7cfbbb59594f5b8f83defce4545364e713b4"
+        },
+        {
+          "file": "artifacts/api-bank-API-03-negative-regression-nonexistent-account-api/error-context.md",
+          "bytes": 3499,
+          "sha256": "2e5bd66eac34ea1b6c9dde2c79ebb2d6ada2214fec21a302f9b0f9e1422e3cdb"
+        },
+        {
+          "file": "artifacts/api-bank-API-03-negative-regression-nonexistent-account-api/trace.zip",
+          "bytes": 7633,
+          "sha256": "749beff6c0a47c29a4c520c361852ab9256f7d923d454884485bbefa9f14e5f4"
+        },
+        {
+          "file": "environment.json",
+          "bytes": 163,
+          "sha256": "905813fe737570ae57f18233709614aa67424b2e1b48d3f46636be60aadb51bc"
+        },
+        {
+          "file": "html/data/194ee0896d9fae5a7951cd529e5527c02856fe45.md",
+          "bytes": 3499,
+          "sha256": "2e5bd66eac34ea1b6c9dde2c79ebb2d6ada2214fec21a302f9b0f9e1422e3cdb"
+        },
+        {
+          "file": "html/data/1dbd48ac112a3d4261ccdf4e86ccc332260e4c38.png",
+          "bytes": 108851,
+          "sha256": "6f330b2ecaa10a79b3501a7998f7f6d2fe7edca5274acdc4e8cb4b1b03574b94"
+        },
+        {
+          "file": "html/data/2610fa73ae3f29d5d32173a23489ce1c611d9822.md",
+          "bytes": 3441,
+          "sha256": "b5ace3e95d26356095613fcaf432b974d232e4c18fdb2e968e1611913c3929e7"
+        },
+        {
+          "file": "html/data/31ba2c1789443af588439b8a4060be1ea1850a76.zip",
+          "bytes": 7633,
+          "sha256": "749beff6c0a47c29a4c520c361852ab9256f7d923d454884485bbefa9f14e5f4"
+        },
+        {
+          "file": "html/data/3d70d4a53d15f38867ec80e3bbe0fa1deb6adbb3.png",
+          "bytes": 123879,
+          "sha256": "3a2adfac23d68cbf26ad8b5a7b012a9a1eba76f82ce760b09e6518f6f8af3f17"
+        },
+        {
+          "file": "html/data/7a7b3307333c6827e0d5e7c5ae0865845dc62476.zip",
+          "bytes": 7362,
+          "sha256": "a05111638c26b5523933f9453c1b7cfbbb59594f5b8f83defce4545364e713b4"
+        },
+        {
+          "file": "html/data/7cb2bd0f0f29846b38b1fdf8f62f33dea7591d11.png",
+          "bytes": 39733,
+          "sha256": "f024996121a2b55ce2bad297c25830476bb385ad2faebe361988fbf4be11f4ce"
+        },
+        {
+          "file": "html/data/7e7a016b914c3a6fe89c679fd4e4184fc4be9d8b.png",
+          "bytes": 121668,
+          "sha256": "325d75cd626529a0dfd255ec1200d334b5ac6445ea812d37ef3dc29d0a897e53"
+        },
+        {
+          "file": "html/data/a471ce9e076b10d1447e3a2b18122ace4bceb2b6.png",
+          "bytes": 112094,
+          "sha256": "57390aa43b9a1db5e4e59c0b3f7183378eb736f2942d49f67adc02cfa4ca54e7"
+        },
+        {
+          "file": "html/data/d09096ada81e3a4f541e5f26acb754ae5b1969ed.png",
+          "bytes": 195935,
+          "sha256": "271cd97e7312b47ada9cefa892fbc30d7c10158c856b898a3219039cff03d513"
+        },
+        {
+          "file": "html/data/d457df6c9e5e5294ec76173e02ada812b144a9cd.png",
+          "bytes": 36112,
+          "sha256": "8a988dc7e6f5b619e4de7d9dda05f1b32044586ccc9f4381632467ab5dd6c98c"
+        },
+        {
+          "file": "html/index.html",
+          "bytes": 534414,
+          "sha256": "501b613e5d3b58ce64a3ec1c98a495261ad2e8f743e3601f70c7af7ba05478cc"
+        },
+        {
+          "file": "html/trace/assets/codeMirrorModule-DNqxPF-E.js",
+          "bytes": 307383,
+          "sha256": "53102e1a7795f44c51b4f4172f9493d94922892a1f5cefe31edf50278e0b89cd"
+        },
+        {
+          "file": "html/trace/assets/defaultSettingsView-BQT9Z6FV.js",
+          "bytes": 669380,
+          "sha256": "807a114bcf1e58a0f46a931b42ae3b94b1ba049d3d6a308f869dea12e9d15034"
+        },
+        {
+          "file": "html/trace/assets/rolldown-runtime-QTnfLwEv.js",
+          "bytes": 694,
+          "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75"
+        },
+        {
+          "file": "html/trace/assets/urlMatch-Cgl6axSs.js",
+          "bytes": 806,
+          "sha256": "2d35d162cc21790c6adc218fbd1c3ef77865646b50f60157e04715f48974d182"
+        },
+        {
+          "file": "html/trace/codeMirrorModule.-QdMvsKi.css",
+          "bytes": 6251,
+          "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+        },
+        {
+          "file": "html/trace/codicon.DCmgc-ay.ttf",
+          "bytes": 80340,
+          "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+        },
+        {
+          "file": "html/trace/defaultSettingsView.C8BeHuxd.css",
+          "bytes": 107270,
+          "sha256": "278101b68ab48ee6323a6afbf4e0e629324e10e96902a62a0875643a1bba3d94"
+        },
+        {
+          "file": "html/trace/index.BY2vkw8A.js",
+          "bytes": 6642,
+          "sha256": "03747a9e732da1e50a15438830d0e98c791c8df4f7efea49dd24f628951bc77f"
+        },
+        {
+          "file": "html/trace/index.B_TqY17P.css",
+          "bytes": 2055,
+          "sha256": "08a212fcacae1866f44f065654afcc4c7d03409c68c74b3315c5bda17a0ca003"
+        },
+        {
+          "file": "html/trace/index.html",
+          "bytes": 2451,
+          "sha256": "8c62d0abbc39be5ecbfa799cdfd181a53d92f93c08c8bfbe622c2e96fece9a95"
+        },
+        {
+          "file": "html/trace/manifest.webmanifest",
+          "bytes": 429,
+          "sha256": "d8540500603a32a39fe7e5a0375dc0f9ebafd11118e06a846db7efc608223ab9"
+        },
+        {
+          "file": "html/trace/playwright-logo.svg",
+          "bytes": 5033,
+          "sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9"
+        },
+        {
+          "file": "html/trace/snapshot.-ChLTbql.js",
+          "bytes": 650,
+          "sha256": "339b2b5c67ef769f60fe959f78a3cfa42b2b8833e30f19cd32bf5194efe833b6"
+        },
+        {
+          "file": "html/trace/snapshot.html",
+          "bytes": 389,
+          "sha256": "7b889f89c715eadd359d10462e3d8b6292cc632a7a86de75b07e8fc9934d1972"
+        },
+        {
+          "file": "html/trace/sw.bundle.js",
+          "bytes": 96720,
+          "sha256": "f2a3172345fbf372075d51204139002fe80dc573714a5c7508b581c049f94aca"
+        },
+        {
+          "file": "html/trace/uiMode.CyMfwkXJ.css",
+          "bytes": 54590,
+          "sha256": "fb403cf0b07007bc1d771e29737f7408924da300e2fab8b289a3ef2e8fc08d7b"
+        },
+        {
+          "file": "html/trace/uiMode.DuLwZHRf.js",
+          "bytes": 37909,
+          "sha256": "185efd95559d290f77cb5bb7c4efd58aeb8f0f74a5ae0b31d40d7a5413f0314c"
+        },
+        {
+          "file": "html/trace/uiMode.html",
+          "bytes": 815,
+          "sha256": "777b88825dacada77675168a4b44e17406992b85c7245cdde8588012cc42ba8b"
+        },
+        {
+          "file": "html/trace/xtermModule.kHJ-D0s7.css",
+          "bytes": 2853,
+          "sha256": "0dd60056134e6a2994a86b59a1e9789b9f04e92924da109aef8c923acaf08ce5"
+        },
+        {
+          "file": "junit.xml",
+          "bytes": 5673,
+          "sha256": "1f253aa0d0a9d8da0611e8444cc0ea8812822c157dced2433fbe4bb9ab85e83b"
+        },
+        {
+          "file": "results.json",
+          "bytes": 1013273,
+          "sha256": "0791f9a9a62ab13d1ced030657669e9e4920df8f4175ea9d9a10e774abd3ddb9"
+        }
+      ]
+    },
+    {
+      "directory": "reports/runs/2026-11-16T18-05-58.964Z",
+      "stats": {
+        "startTime": "2026-11-16T18:05:29.216Z",
+        "duration": 17116.872000000003,
+        "expected": 11,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "total": 11,
+      "junitFailures": 0,
+      "junitErrors": 0,
+      "projects": {
+        "api": 4,
+        "chromium": 7
+      },
+      "failures": [],
+      "attachments": 13,
+      "screenshots": 7,
+      "manifest": [
+        {
+          "file": "artifacts/.last-run.json",
+          "bytes": 45,
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "file": "environment.json",
+          "bytes": 163,
+          "sha256": "c832d2b1994e158ea34c426ac5f3f136031b47e23f03a2c5795b4236db9d0348"
+        },
+        {
+          "file": "html/data/1dbd48ac112a3d4261ccdf4e86ccc332260e4c38.png",
+          "bytes": 108851,
+          "sha256": "6f330b2ecaa10a79b3501a7998f7f6d2fe7edca5274acdc4e8cb4b1b03574b94"
+        },
+        {
+          "file": "html/data/27ca3232f856c9f821a593be4f3cd5f48c2fee25.png",
+          "bytes": 112068,
+          "sha256": "5e5d28b1c3d6368f33083ca1b490a499a9686f1278aedf163d936728229d0cba"
+        },
+        {
+          "file": "html/data/3d70d4a53d15f38867ec80e3bbe0fa1deb6adbb3.png",
+          "bytes": 123879,
+          "sha256": "3a2adfac23d68cbf26ad8b5a7b012a9a1eba76f82ce760b09e6518f6f8af3f17"
+        },
+        {
+          "file": "html/data/7cb2bd0f0f29846b38b1fdf8f62f33dea7591d11.png",
+          "bytes": 39733,
+          "sha256": "f024996121a2b55ce2bad297c25830476bb385ad2faebe361988fbf4be11f4ce"
+        },
+        {
+          "file": "html/data/7e7a016b914c3a6fe89c679fd4e4184fc4be9d8b.png",
+          "bytes": 121668,
+          "sha256": "325d75cd626529a0dfd255ec1200d334b5ac6445ea812d37ef3dc29d0a897e53"
+        },
+        {
+          "file": "html/data/a84a78995697638a2b5ba31b1841c13e47ff259e.png",
+          "bytes": 96972,
+          "sha256": "744c81587411a552c20d5317f82790cfba97360c6bafe24b615aa0faf49a99e9"
+        },
+        {
+          "file": "html/data/d09096ada81e3a4f541e5f26acb754ae5b1969ed.png",
+          "bytes": 195935,
+          "sha256": "271cd97e7312b47ada9cefa892fbc30d7c10158c856b898a3219039cff03d513"
+        },
+        {
+          "file": "html/index.html",
+          "bytes": 536878,
+          "sha256": "5895d724ceb5fd906bccf75d82c6da1ddb31b09c2fb409d3059445e8a55578fb"
+        },
+        {
+          "file": "junit.xml",
+          "bytes": 1804,
+          "sha256": "4cc15eb5c35defd4250ba6f21197f6ddbd83db3d7abd35493103c06083bf01ab"
+        },
+        {
+          "file": "results.json",
+          "bytes": 1123960,
+          "sha256": "e82294e722c2cafcfd8a564cd84c0cf701c835f3196b83192321783b9b1f1a0f"
+        },
+        {
+          "file": "source/package-lock.json",
+          "bytes": 2925,
+          "sha256": "c79019361d62f3121e95215ad951c0f3c877310e21dc9fd1ad00f3f1647185df"
+        },
+        {
+          "file": "source/package.json",
+          "bytes": 538,
+          "sha256": "1238f6bdcc4b5dccfc2d806925a74f513dec2293e0f2caeb136b7c815720dd55"
+        },
+        {
+          "file": "source/playwright.config.ts",
+          "bytes": 947,
+          "sha256": "e7495dde1813fae0b2e0a5dbf992a4c37fa43b69edc8cf67379fbc98d5d9743c"
+        },
+        {
+          "file": "source/tests/api/bank.spec.ts",
+          "bytes": 2719,
+          "sha256": "919cf1f09a60dce8a775e85f6c967aff688dbdafffde2bd23ff166f5540a553e"
+        },
+        {
+          "file": "source/tests/support/bank-api.ts",
+          "bytes": 658,
+          "sha256": "8246066b62535f1e311c7284103e1d6f85d1c66368405164cf669ef0f40dcb7e"
+        },
+        {
+          "file": "source/tests/support/bank-page.ts",
+          "bytes": 1552,
+          "sha256": "9880654a7215c0423fbaee13d05e6d3726ce4bb59f57170569c736b67aca7075"
+        },
+        {
+          "file": "source/tests/support/data.ts",
+          "bytes": 429,
+          "sha256": "8c8c1606c9fc66c8b0738de6d0e71325c45537c4c4f9a66e125b2208e9f18c70"
+        },
+        {
+          "file": "source/tests/support/fixtures.ts",
+          "bytes": 445,
+          "sha256": "511bd79f434a71352caf5f1c1498bedfe62b2a44bb5cf1f10d1cb8e32c36b535"
+        },
+        {
+          "file": "source/tests/web/banking.spec.ts",
+          "bytes": 3044,
+          "sha256": "0443aa2eeffe2491f36269ec94a1ade842ffeeac2493ffdc0cee8a21d96d0c75"
+        }
+      ]
+    },
+    {
+      "directory": "reports/runs/2026-11-16T18-21-37.384Z",
+      "stats": {
+        "startTime": "2026-11-16T18:18:23.107Z",
+        "duration": 67911.161,
+        "expected": 17,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "total": 19,
+      "junitFailures": 2,
+      "junitErrors": 0,
+      "projects": {
+        "api": 5,
+        "chromium": 14
+      },
+      "failures": [
+        "PAY-04 @negative @regression reject amount 0",
+        "PAY-05 @negative @regression reject amount -1"
+      ],
+      "attachments": 62,
+      "screenshots": 12,
+      "manifest": [
+        {
+          "file": "artifacts/.last-run.json",
+          "bytes": 145,
+          "sha256": "d578c6e4f8d4856d69cf7d60d52d694edea20d2eaa9fa71a3131f375186e43ee"
+        },
+        {
+          "file": "artifacts/web-payments-PAY-04-negative-regression-reject-amount-0-chromium/error-context.md",
+          "bytes": 6849,
+          "sha256": "8a74222d07bf61b7d447433575bd5d01ad12e15323adbdfa656c5244069b6757"
+        },
+        {
+          "file": "artifacts/web-payments-PAY-04-negative-regression-reject-amount-0-chromium/test-failed-1.png",
+          "bytes": 106673,
+          "sha256": "5461328979b6ddf0cf9b8bb4a314356caff54334446c4aecce855cd76524d788"
+        },
+        {
+          "file": "artifacts/web-payments-PAY-04-negative-regression-reject-amount-0-chromium/trace.zip",
+          "bytes": 2132545,
+          "sha256": "577730a2f62332b6797c17170af2e37d3a4773f424b436f784c9580856388023"
+        },
+        {
+          "file": "artifacts/web-payments-PAY-04-negative-regression-reject-amount-0-chromium/video.webm",
+          "bytes": 738776,
+          "sha256": "e04d1da1d704ab8e14b6e2a7eb88e45e46388f824b661a2fcbf10a9bb036f85a"
+        },
+        {
+          "file": "artifacts/web-payments-PAY-05-negative-regression-reject-amount--1-chromium/error-context.md",
+          "bytes": 6954,
+          "sha256": "1922793cfe9a5f3e834e11fa6aa8c2eb07ef30aa08db63747124c62c8cdf665a"
+        },
+        {
+          "file": "artifacts/web-payments-PAY-05-negative-regression-reject-amount--1-chromium/test-failed-1.png",
+          "bytes": 106746,
+          "sha256": "062f2e9fe89ab0c177daa9e8c2280fd7324e5f39ef23837674398edd2f87a46b"
+        },
+        {
+          "file": "artifacts/web-payments-PAY-05-negative-regression-reject-amount--1-chromium/trace.zip",
+          "bytes": 2331066,
+          "sha256": "bd8895683ce4bba5834da33e9d00767fd8d370b12280e3f7fb42429dfead3098"
+        },
+        {
+          "file": "artifacts/web-payments-PAY-05-negative-regression-reject-amount--1-chromium/video.webm",
+          "bytes": 761840,
+          "sha256": "85b0c446fc03d06059e03185413ceb1b73fbcb5beea2cc6210d19f24e95bd7b0"
+        },
+        {
+          "file": "environment.json",
+          "bytes": 163,
+          "sha256": "5c3be5c77b227303417d56dec1ab458c5219ec5a00beaec1eb5570af3974f4f1"
+        },
+        {
+          "file": "html/data/13ae2ebf7d3bb4231a5a6c31a21071cb82f39e54.md",
+          "bytes": 6849,
+          "sha256": "8a74222d07bf61b7d447433575bd5d01ad12e15323adbdfa656c5244069b6757"
+        },
+        {
+          "file": "html/data/1ba275671698136d3a9edf06e0cedaf559f07efb.png",
+          "bytes": 106746,
+          "sha256": "062f2e9fe89ab0c177daa9e8c2280fd7324e5f39ef23837674398edd2f87a46b"
+        },
+        {
+          "file": "html/data/1f3b925c062521a05dcdf2ee835c707b779bf461.zip",
+          "bytes": 2132545,
+          "sha256": "577730a2f62332b6797c17170af2e37d3a4773f424b436f784c9580856388023"
+        },
+        {
+          "file": "html/data/2d411600b235c48c3ee5438a2620c6ede81f4691.webm",
+          "bytes": 761840,
+          "sha256": "85b0c446fc03d06059e03185413ceb1b73fbcb5beea2cc6210d19f24e95bd7b0"
+        },
+        {
+          "file": "html/data/43a96264e313f67e21a363689b4cfc36fa69db6b.png",
+          "bytes": 111957,
+          "sha256": "d3a781cac0a9062a3b8b100e4051b811b174303781aadc99e4376f9b9f91ae54"
+        },
+        {
+          "file": "html/data/44ec2acfb15faf8f24d8ffbf8a5483439ea7f4d6.zip",
+          "bytes": 2331066,
+          "sha256": "bd8895683ce4bba5834da33e9d00767fd8d370b12280e3f7fb42429dfead3098"
+        },
+        {
+          "file": "html/data/4adcac511024c19a680d64dedfa011c4ae820d28.webm",
+          "bytes": 738776,
+          "sha256": "e04d1da1d704ab8e14b6e2a7eb88e45e46388f824b661a2fcbf10a9bb036f85a"
+        },
+        {
+          "file": "html/data/4bfcc37e1389633eff08d41c4ceea1deca3592b2.md",
+          "bytes": 6954,
+          "sha256": "1922793cfe9a5f3e834e11fa6aa8c2eb07ef30aa08db63747124c62c8cdf665a"
+        },
+        {
+          "file": "html/data/5e7a503fc6bcc193d13a595eb5031fb35df9296e.png",
+          "bytes": 121928,
+          "sha256": "ac2aebfe43ab3de2c34c7b680e952c447e3c07a24640f7406e990b4def4f6073"
+        },
+        {
+          "file": "html/data/6a3112b6473492ba03cc93332aa90939cfe1a7ca.png",
+          "bytes": 47174,
+          "sha256": "3b3e23ea2b3389f1aadc25988855a6874126ed391324bea732dfc7161ae8b744"
+        },
+        {
+          "file": "html/data/7e7a016b914c3a6fe89c679fd4e4184fc4be9d8b.png",
+          "bytes": 121668,
+          "sha256": "325d75cd626529a0dfd255ec1200d334b5ac6445ea812d37ef3dc29d0a897e53"
+        },
+        {
+          "file": "html/data/999e321cfb1f5ef6c9d0697e223aa6c5672019bd.png",
+          "bytes": 65265,
+          "sha256": "f7f605a07a483e9afc1767e7e9d8a32264a19f6faa72e82ab200683bc5549b49"
+        },
+        {
+          "file": "html/data/a84a78995697638a2b5ba31b1841c13e47ff259e.png",
+          "bytes": 96972,
+          "sha256": "744c81587411a552c20d5317f82790cfba97360c6bafe24b615aa0faf49a99e9"
+        },
+        {
+          "file": "html/data/c81a2b53305f10045e92be0a46f528212b2f36b4.png",
+          "bytes": 96729,
+          "sha256": "a5497d6eb084a51f29ed2e5f08e6c3d34d3d7f1387c832d008f0eef739f74456"
+        },
+        {
+          "file": "html/data/d09096ada81e3a4f541e5f26acb754ae5b1969ed.png",
+          "bytes": 195935,
+          "sha256": "271cd97e7312b47ada9cefa892fbc30d7c10158c856b898a3219039cff03d513"
+        },
+        {
+          "file": "html/data/dc22624d3adc030e9cdd014f93a5522bc296d074.png",
+          "bytes": 106673,
+          "sha256": "5461328979b6ddf0cf9b8bb4a314356caff54334446c4aecce855cd76524d788"
+        },
+        {
+          "file": "html/data/e25b036df8494092b8c7b5876df088d65c32e04a.png",
+          "bytes": 96915,
+          "sha256": "47462abf4a961a6095000ff863de714beb9bd066bfc40417ebdafecec306b830"
+        },
+        {
+          "file": "html/index.html",
+          "bytes": 569362,
+          "sha256": "2b273f079ca3ba326183a182fd46deecf62c2c5a671d213b74ff3466d24faca6"
+        },
+        {
+          "file": "html/trace/assets/codeMirrorModule-DNqxPF-E.js",
+          "bytes": 307383,
+          "sha256": "53102e1a7795f44c51b4f4172f9493d94922892a1f5cefe31edf50278e0b89cd"
+        },
+        {
+          "file": "html/trace/assets/defaultSettingsView-BQT9Z6FV.js",
+          "bytes": 669380,
+          "sha256": "807a114bcf1e58a0f46a931b42ae3b94b1ba049d3d6a308f869dea12e9d15034"
+        },
+        {
+          "file": "html/trace/assets/rolldown-runtime-QTnfLwEv.js",
+          "bytes": 694,
+          "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75"
+        },
+        {
+          "file": "html/trace/assets/urlMatch-Cgl6axSs.js",
+          "bytes": 806,
+          "sha256": "2d35d162cc21790c6adc218fbd1c3ef77865646b50f60157e04715f48974d182"
+        },
+        {
+          "file": "html/trace/codeMirrorModule.-QdMvsKi.css",
+          "bytes": 6251,
+          "sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8"
+        },
+        {
+          "file": "html/trace/codicon.DCmgc-ay.ttf",
+          "bytes": 80340,
+          "sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9"
+        },
+        {
+          "file": "html/trace/defaultSettingsView.C8BeHuxd.css",
+          "bytes": 107270,
+          "sha256": "278101b68ab48ee6323a6afbf4e0e629324e10e96902a62a0875643a1bba3d94"
+        },
+        {
+          "file": "html/trace/index.BY2vkw8A.js",
+          "bytes": 6642,
+          "sha256": "03747a9e732da1e50a15438830d0e98c791c8df4f7efea49dd24f628951bc77f"
+        },
+        {
+          "file": "html/trace/index.B_TqY17P.css",
+          "bytes": 2055,
+          "sha256": "08a212fcacae1866f44f065654afcc4c7d03409c68c74b3315c5bda17a0ca003"
+        },
+        {
+          "file": "html/trace/index.html",
+          "bytes": 2451,
+          "sha256": "8c62d0abbc39be5ecbfa799cdfd181a53d92f93c08c8bfbe622c2e96fece9a95"
+        },
+        {
+          "file": "html/trace/manifest.webmanifest",
+          "bytes": 429,
+          "sha256": "d8540500603a32a39fe7e5a0375dc0f9ebafd11118e06a846db7efc608223ab9"
+        },
+        {
+          "file": "html/trace/playwright-logo.svg",
+          "bytes": 5033,
+          "sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9"
+        },
+        {
+          "file": "html/trace/snapshot.-ChLTbql.js",
+          "bytes": 650,
+          "sha256": "339b2b5c67ef769f60fe959f78a3cfa42b2b8833e30f19cd32bf5194efe833b6"
+        },
+        {
+          "file": "html/trace/snapshot.html",
+          "bytes": 389,
+          "sha256": "7b889f89c715eadd359d10462e3d8b6292cc632a7a86de75b07e8fc9934d1972"
+        },
+        {
+          "file": "html/trace/sw.bundle.js",
+          "bytes": 96720,
+          "sha256": "f2a3172345fbf372075d51204139002fe80dc573714a5c7508b581c049f94aca"
+        },
+        {
+          "file": "html/trace/uiMode.CyMfwkXJ.css",
+          "bytes": 54590,
+          "sha256": "fb403cf0b07007bc1d771e29737f7408924da300e2fab8b289a3ef2e8fc08d7b"
+        },
+        {
+          "file": "html/trace/uiMode.DuLwZHRf.js",
+          "bytes": 37909,
+          "sha256": "185efd95559d290f77cb5bb7c4efd58aeb8f0f74a5ae0b31d40d7a5413f0314c"
+        },
+        {
+          "file": "html/trace/uiMode.html",
+          "bytes": 815,
+          "sha256": "777b88825dacada77675168a4b44e17406992b85c7245cdde8588012cc42ba8b"
+        },
+        {
+          "file": "html/trace/xtermModule.kHJ-D0s7.css",
+          "bytes": 2853,
+          "sha256": "0dd60056134e6a2994a86b59a1e9789b9f04e92924da109aef8c923acaf08ce5"
+        },
+        {
+          "file": "junit.xml",
+          "bytes": 13467,
+          "sha256": "d5ce36d13b7296b75f61a1dbeef28969f37df9c5634ac183101595ceda6dcd42"
+        },
+        {
+          "file": "results.json",
+          "bytes": 1514732,
+          "sha256": "3dae8458fc41c56d0d9e3ccbbaa6054307a2fbf638a29e47b2f91984c35284d9"
+        },
+        {
+          "file": "source/.github/workflows/qa.yml",
+          "bytes": 874,
+          "sha256": "67fdf3e1e829266eeeb9b91bc1a61a9eab7d394900796021f6ea42046f11b09f"
+        },
+        {
+          "file": "source/casos/casos-pagos.csv",
+          "bytes": 3367,
+          "sha256": "b1e75476b3d8077893018979d64b95df028ae30dff15bb65c66365ae362e6cf6"
+        },
+        {
+          "file": "source/docs/defects.md",
+          "bytes": 1756,
+          "sha256": "ca9d4bcfd3eb37ed6efcdc093fd066f5fd79d3ea35b2046af26ca3c106e04755"
+        },
+        {
+          "file": "source/docs/execution.md",
+          "bytes": 2419,
+          "sha256": "457e16818531099965fa4309835889278d36e458f30907f333e56d2b0b86da7a"
+        },
+        {
+          "file": "source/docs/mobile-appium.md",
+          "bytes": 4139,
+          "sha256": "5aeb5661c1ac7e96bac467a4dfc82efd6689265e41cd9cb777382aeed15e9105"
+        },
+        {
+          "file": "source/docs/openapi.yaml",
+          "bytes": 26889,
+          "sha256": "c3ebf8e275b12aec7a3b458c8ffe477dc8700c2bd298326758c57a77e29a353b"
+        },
+        {
+          "file": "source/docs/requirements-extracted.txt",
+          "bytes": 6738,
+          "sha256": "fcb4edc6e274881d7ccaf479261db8da7d5a02b43f37912c078f33e0480f141d"
+        },
+        {
+          "file": "source/docs/test-plan.md",
+          "bytes": 2871,
+          "sha256": "cf9b32e8fc9fe8ee1c2b1b89f502cf9669e5861d9460f35f0d8a80e3e1c88c8a"
+        },
+        {
+          "file": "source/mobile/package.json",
+          "bytes": 169,
+          "sha256": "384c0932917b09fdf547eb17850179c3d860029d8caa8a0df788c9702936dcf6"
+        },
+        {
+          "file": "source/mobile/smoke.mjs",
+          "bytes": 954,
+          "sha256": "a20d770482d72609944835474a95d629da500f8db3d0d9d88c994e7b692aa3e3"
+        },
+        {
+          "file": "source/package-lock.json",
+          "bytes": 12175,
+          "sha256": "f4571360e2ad21812090bc29cd475332f646f878a01985ddf9f2181028312bb9"
+        },
+        {
+          "file": "source/package.json",
+          "bytes": 590,
+          "sha256": "2303ccda64faf32dc37f74004834919f0bdebcf48b07521bde8d8b301f40396f"
+        },
+        {
+          "file": "source/performance/analisis-simulado.md",
+          "bytes": 1507,
+          "sha256": "a2fe801e39a85d53ba724dfe3aa63a89ce090617a0152b892335d70fe649093a"
+        },
+        {
+          "file": "source/performance/parabank.jmx",
+          "bytes": 7429,
+          "sha256": "2d91224be764c6ad30c5c62c5538d9a2301279a1754602fb6e887b42b7897dda"
+        },
+        {
+          "file": "source/performance/README.md",
+          "bytes": 2868,
+          "sha256": "05f986d86acdcfcefbcf1b5915dbd5a4cafdc5cf290763505da0b7ac3e4ed215"
+        },
+        {
+          "file": "source/playwright.config.ts",
+          "bytes": 947,
+          "sha256": "e7495dde1813fae0b2e0a5dbf992a4c37fa43b69edc8cf67379fbc98d5d9743c"
+        },
+        {
+          "file": "source/README.md",
+          "bytes": 3101,
+          "sha256": "15ca52bfc4a9459068ca8c5b17622ca596847b666ecf6776f85b306e68b284c6"
+        },
+        {
+          "file": "source/scripts/archive.mjs",
+          "bytes": 1194,
+          "sha256": "bb2d4d2923fe78c7e7bd732162056434b56e394b3f3142922191e8a707980a59"
+        },
+        {
+          "file": "source/scripts/build-jmeter.mjs",
+          "bytes": 5967,
+          "sha256": "0c0b4c712c285ef0d8eda3ddc807db09ca7e9e93bf7e9cea1e3c42ef59eb0007"
+        },
+        {
+          "file": "source/scripts/summarize.mjs",
+          "bytes": 748,
+          "sha256": "83200a2a01f4d410c2819361f76e4933ce57d7db77f67c348d4889d0e145bae7"
+        },
+        {
+          "file": "source/tests/api/bank.spec.ts",
+          "bytes": 4570,
+          "sha256": "447ebde2160803e57306a7cffa4ac4ebc96e3341281fac752b2cb20a9b7e659b"
+        },
+        {
+          "file": "source/tests/support/bank-api.ts",
+          "bytes": 1399,
+          "sha256": "3cf4b7b11e878c03275a55128d4dba9ddd23b7d3e3a1e413eeb5174253d07514"
+        },
+        {
+          "file": "source/tests/support/bank-page.ts",
+          "bytes": 1552,
+          "sha256": "9880654a7215c0423fbaee13d05e6d3726ce4bb59f57170569c736b67aca7075"
+        },
+        {
+          "file": "source/tests/support/data.ts",
+          "bytes": 429,
+          "sha256": "8c8c1606c9fc66c8b0738de6d0e71325c45537c4c4f9a66e125b2208e9f18c70"
+        },
+        {
+          "file": "source/tests/support/fixtures.ts",
+          "bytes": 445,
+          "sha256": "511bd79f434a71352caf5f1c1498bedfe62b2a44bb5cf1f10d1cb8e32c36b535"
+        },
+        {
+          "file": "source/tests/support/payments-page.ts",
+          "bytes": 1417,
+          "sha256": "96012653287bc18491a89730dd313385c7df0f0b82286861e4859788a48b65a7"
+        },
+        {
+          "file": "source/tests/web/banking.spec.ts",
+          "bytes": 3044,
+          "sha256": "0443aa2eeffe2491f36269ec94a1ade842ffeeac2493ffdc0cee8a21d96d0c75"
+        },
+        {
+          "file": "source/tests/web/payments.spec.ts",
+          "bytes": 4927,
+          "sha256": "a7ea8ee91ef073bfaaf359687b4d2b664b5ba67a1bcee04f740fda9bf3b9c856"
+        },
+        {
+          "file": "source/tsconfig.json",
+          "bytes": 260,
+          "sha256": "c1e5b4583bf47ca6cdd1eb6121bde506d9fb08da1616a13ce84130bce9bca54d"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+<testsuites id="" name="" tests="11" failures="2" skipped="0" errors="0" time="19.836422">
+<testsuite name="api\bank.spec.ts" timestamp="2026-11-16T17:59:05.827Z" hostname="api" tests="4" failures="2" skipped="0" time="3.494" errors="0">
+<testcase name="API-01 @smoke @positive service status" classname="api\bank.spec.ts" time="0.559">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\api-bank-API-01-smoke-positive-service-status-api\error-context.md]]
+
+[[ATTACHMENT|artifacts\api-bank-API-01-smoke-positive-service-status-api\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(received).toBe(expected) // Object.is equality" type="expect.toBe">
+<![CDATA[  [api] › api\bank.spec.ts:6:1 › API-01 @smoke @positive service status ────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 200
+    Received: 404
+
+       6 | test('API-01 @smoke @positive service status', async ({ request }, info) => {
+       7 |   const response = await new BankApi(request, info).get('status');
+    >  8 |   expect(response.status()).toBe(200);
+         |                             ^
+       9 |   expect(await response.text()).toMatch(/running/i);
+      10 | });
+      11 |
+        at C:\Users\TOÑO\Desktop\Prueba\tests\api\bank.spec.ts:8:29
+
+    Error Context: ..\reports\latest\artifacts\api-bank-API-01-smoke-positive-service-status-api\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\api-bank-API-01-smoke-positive-service-status-api\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\api-bank-API-01-smoke-positive-service-status-api\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="API-02 @negative @regression invalid credentials" classname="api\bank.spec.ts" time="0.246">
+</testcase>
+<testcase name="API-03 @negative @regression nonexistent account" classname="api\bank.spec.ts" time="0.245">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\error-context.md]]
+
+[[ATTACHMENT|artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(received).toMatch(expected)" type="expect.toMatch">
+<![CDATA[  [api] › api\bank.spec.ts:18:1 › API-03 @negative @regression nonexistent account ─────────────────
+
+    Error: expect(received).toMatch(expected)
+
+    Expected pattern: /not found|does not exist|invalid/i
+    Received string:  "Could not find account #2147483647"
+
+      19 |   const response = await new BankApi(request, info).get('accounts/2147483647');
+      20 |   expect(response.status()).toBe(400);
+    > 21 |   expect(await response.text()).toMatch(/not found|does not exist|invalid/i);
+         |                                 ^
+      22 | });
+      23 |
+      24 | test('API-04 @positive @regression customer and accounts contract', async ({ browser, playwright }, info) => {
+        at C:\Users\TOÑO\Desktop\Prueba\tests\api\bank.spec.ts:21:33
+
+    Error Context: ..\reports\latest\artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="API-04 @positive @regression customer and accounts contract" classname="api\bank.spec.ts" time="2.444">
+</testcase>
+</testsuite>
+<testsuite name="web\banking.spec.ts" timestamp="2026-11-16T17:59:05.827Z" hostname="chromium" tests="7" failures="0" skipped="0" time="13.877" errors="0">
+<testcase name="WEB-01 @smoke @positive public home" classname="web\banking.spec.ts" time="1.277">
+</testcase>
+<testcase name="WEB-02 @negative @regression empty login" classname="web\banking.spec.ts" time="1.222">
+</testcase>
+<testcase name="WEB-03 @negative @regression unknown login" classname="web\banking.spec.ts" time="1.456">
+</testcase>
+<testcase name="WEB-04 @negative @regression required registration fields" classname="web\banking.spec.ts" time="1.4">
+</testcase>
+<testcase name="WEB-05 @negative @regression mismatched password" classname="web\banking.spec.ts" time="2.223">
+</testcase>
+<testcase name="WEB-06 @positive @regression registration, accounts, logout and login" classname="web\banking.spec.ts" time="4.617">
+</testcase>
+<testcase name="WEB-07 @positive @regression public navigation" classname="web\banking.spec.ts" time="1.682">
+</testcase>
+</testsuite>
+</testsuites>

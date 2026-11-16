@@ -1,0 +1,28 @@
+<testsuites id="" name="" tests="11" failures="0" skipped="0" errors="0" time="17.116872000000004">
+<testsuite name="api\bank.spec.ts" timestamp="2026-11-16T18:05:29.324Z" hostname="api" tests="4" failures="0" skipped="0" time="3.422" errors="0">
+<testcase name="API-01 @smoke @positive published API contract" classname="api\bank.spec.ts" time="0.698">
+</testcase>
+<testcase name="API-02 @negative @regression invalid credentials" classname="api\bank.spec.ts" time="0.255">
+</testcase>
+<testcase name="API-03 @negative @regression nonexistent account" classname="api\bank.spec.ts" time="0.227">
+</testcase>
+<testcase name="API-04 @positive @regression customer and accounts contract" classname="api\bank.spec.ts" time="2.242">
+</testcase>
+</testsuite>
+<testsuite name="web\banking.spec.ts" timestamp="2026-11-16T18:05:29.324Z" hostname="chromium" tests="7" failures="0" skipped="0" time="12.395" errors="0">
+<testcase name="WEB-01 @smoke @positive public home" classname="web\banking.spec.ts" time="1.285">
+</testcase>
+<testcase name="WEB-02 @negative @regression empty login" classname="web\banking.spec.ts" time="1.235">
+</testcase>
+<testcase name="WEB-03 @negative @regression unknown login" classname="web\banking.spec.ts" time="1.501">
+</testcase>
+<testcase name="WEB-04 @negative @regression required registration fields" classname="web\banking.spec.ts" time="1.439">
+</testcase>
+<testcase name="WEB-05 @negative @regression mismatched password" classname="web\banking.spec.ts" time="1.421">
+</testcase>
+<testcase name="WEB-06 @positive @regression registration, accounts, logout and login" classname="web\banking.spec.ts" time="4.051">
+</testcase>
+<testcase name="WEB-07 @positive @regression public navigation" classname="web\banking.spec.ts" time="1.463">
+</testcase>
+</testsuite>
+</testsuites>

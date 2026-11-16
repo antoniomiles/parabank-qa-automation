@@ -1,0 +1,11 @@
+{
+  "name": "parabank-appium-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node smoke.mjs"
+  },
+  "dependencies": {
+    "webdriverio": "10.2.0"
+  }
+}

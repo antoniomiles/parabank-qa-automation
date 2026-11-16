@@ -1,0 +1,550 @@
+<testsuites id="" name="" tests="11" failures="0" skipped="0" errors="11" time="14.275516">
+<testsuite name="api\bank.spec.ts" timestamp="2026-11-16T17:58:43.013Z" hostname="api" tests="4" failures="0" skipped="0" time="3.144" errors="4">
+<testcase name="API-01 @smoke @positive service status" classname="api\bank.spec.ts" time="0.057">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\api-bank-API-01-smoke-positive-service-status-api\error-context.md]]
+
+[[ATTACHMENT|artifacts\api-bank-API-01-smoke-positive-service-status-api\trace.zip]]
+]]>
+</system-out>
+<error message="apiRequestContext.get: connect EACCES 104.20.38.142:443" type="AggregateError">
+<![CDATA[  [api] › api\bank.spec.ts:6:1 › API-01 @smoke @positive service status ────────────────────────────
+
+    AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443
+    connect EACCES 172.66.170.155:443
+    Call log:
+      - → GET https://parabank.parasoft.com/parabank/services/bank/status
+        - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13
+        - accept: application/json
+        - accept-encoding: gzip,deflate,br
+
+
+       at support\bank-api.ts:6
+
+      4 |   constructor(private readonly request: APIRequestContext, private readonly info: TestInfo) {}
+      5 |   async get(path: string): Promise<APIResponse> {
+    > 6 |     const response = await this.request.get(`/parabank/services/bank/${path}`, {
+        |                                         ^
+      7 |       headers: { Accept: 'application/json' },
+      8 |     });
+      9 |     await this.info.attach('api-response', {
+        at BankApi.get (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-api.ts:6:41)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\api\bank.spec.ts:7:53
+
+    Error Context: ..\reports\latest\artifacts\api-bank-API-01-smoke-positive-service-status-api\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\api-bank-API-01-smoke-positive-service-status-api\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\api-bank-API-01-smoke-positive-service-status-api\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="API-02 @negative @regression invalid credentials" classname="api\bank.spec.ts" time="0.042">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\api-bank-API-02-negative-regression-invalid-credentials-api\error-context.md]]
+
+[[ATTACHMENT|artifacts\api-bank-API-02-negative-regression-invalid-credentials-api\trace.zip]]
+]]>
+</system-out>
+<error message="apiRequestContext.get: connect EACCES 104.20.38.142:443" type="AggregateError">
+<![CDATA[  [api] › api\bank.spec.ts:12:1 › API-02 @negative @regression invalid credentials ─────────────────
+
+    AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443
+    connect EACCES 172.66.170.155:443
+    Call log:
+      - → GET https://parabank.parasoft.com/parabank/services/bank/login/qade2f24a216e043bcab/invalid
+        - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13
+        - accept: application/json
+        - accept-encoding: gzip,deflate,br
+
+
+       at support\bank-api.ts:6
+
+      4 |   constructor(private readonly request: APIRequestContext, private readonly info: TestInfo) {}
+      5 |   async get(path: string): Promise<APIResponse> {
+    > 6 |     const response = await this.request.get(`/parabank/services/bank/${path}`, {
+        |                                         ^
+      7 |       headers: { Accept: 'application/json' },
+      8 |     });
+      9 |     await this.info.attach('api-response', {
+        at BankApi.get (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-api.ts:6:41)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\api\bank.spec.ts:13:53
+
+    Error Context: ..\reports\latest\artifacts\api-bank-API-02-negative-regression-invalid-credentials-api\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\api-bank-API-02-negative-regression-invalid-credentials-api\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\api-bank-API-02-negative-regression-invalid-credentials-api\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="API-03 @negative @regression nonexistent account" classname="api\bank.spec.ts" time="0.046">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\error-context.md]]
+
+[[ATTACHMENT|artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\trace.zip]]
+]]>
+</system-out>
+<error message="apiRequestContext.get: connect EACCES 104.20.38.142:443" type="AggregateError">
+<![CDATA[  [api] › api\bank.spec.ts:18:1 › API-03 @negative @regression nonexistent account ─────────────────
+
+    AggregateError: apiRequestContext.get: connect EACCES 104.20.38.142:443
+    connect EACCES 172.66.170.155:443
+    Call log:
+      - → GET https://parabank.parasoft.com/parabank/services/bank/accounts/2147483647
+        - user-agent: Playwright/1.65.1 (x64; windows 10.0) node/26.13
+        - accept: application/json
+        - accept-encoding: gzip,deflate,br
+
+
+       at support\bank-api.ts:6
+
+      4 |   constructor(private readonly request: APIRequestContext, private readonly info: TestInfo) {}
+      5 |   async get(path: string): Promise<APIResponse> {
+    > 6 |     const response = await this.request.get(`/parabank/services/bank/${path}`, {
+        |                                         ^
+      7 |       headers: { Accept: 'application/json' },
+      8 |     });
+      9 |     await this.info.attach('api-response', {
+        at BankApi.get (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-api.ts:6:41)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\api\bank.spec.ts:19:53
+
+    Error Context: ..\reports\latest\artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\api-bank-API-03-negative-regression-nonexistent-account-api\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="API-04 @positive @regression customer and accounts contract" classname="api\bank.spec.ts" time="2.999">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\error-context.md]]
+
+[[ATTACHMENT|artifacts\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm" type="Error">
+<![CDATA[  [api] › api\bank.spec.ts:24:1 › API-04 @positive @regression customer and accounts contract ──────
+
+    Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm
+    Call log:
+      - navigating to "https://parabank.parasoft.com/parabank/register.htm", waiting until "load"
+
+
+       at support\bank-page.ts:8
+
+       6 |
+       7 |   async open(path = 'index.htm') {
+    >  8 |     await this.page.goto(`/parabank/${path}`);
+         |                     ^
+       9 |   }
+      10 |
+      11 |   async login(username: string, password: string) {
+        at BankPage.open (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:8:21)
+        at BankPage.register (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:18:16)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\api\bank.spec.ts:28:49
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\api-bank-API-04-positive-r-f6f0d-tomer-and-accounts-contract-api\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="web\banking.spec.ts" timestamp="2026-11-16T17:58:43.013Z" hostname="chromium" tests="7" failures="0" skipped="0" time="2.25" errors="7">
+<testcase name="WEB-01 @smoke @positive public home" classname="web\banking.spec.ts" time="0.323">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\web-banking-WEB-01-smoke-positive-public-home-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-01-smoke-positive-public-home-chromium\video.webm]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-01-smoke-positive-public-home-chromium\error-context.md]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-01-smoke-positive-public-home-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm" type="Error">
+<![CDATA[  [chromium] › web\banking.spec.ts:4:1 › WEB-01 @smoke @positive public home ───────────────────────
+
+    Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm
+    Call log:
+      - navigating to "https://parabank.parasoft.com/parabank/index.htm", waiting until "load"
+
+
+       at support\bank-page.ts:8
+
+       6 |
+       7 |   async open(path = 'index.htm') {
+    >  8 |     await this.page.goto(`/parabank/${path}`);
+         |                     ^
+       9 |   }
+      10 |
+      11 |   async login(username: string, password: string) {
+        at BankPage.open (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:8:21)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\banking.spec.ts:5:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-01-smoke-positive-public-home-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-01-smoke-positive-public-home-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\web-banking-WEB-01-smoke-positive-public-home-chromium\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-01-smoke-positive-public-home-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\web-banking-WEB-01-smoke-positive-public-home-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="WEB-02 @negative @regression empty login" classname="web\banking.spec.ts" time="0.321">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\web-banking-WEB-02-negative-regression-empty-login-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-02-negative-regression-empty-login-chromium\video.webm]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-02-negative-regression-empty-login-chromium\error-context.md]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-02-negative-regression-empty-login-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm" type="Error">
+<![CDATA[  [chromium] › web\banking.spec.ts:11:1 › WEB-02 @negative @regression empty login ─────────────────
+
+    Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm
+    Call log:
+      - navigating to "https://parabank.parasoft.com/parabank/index.htm", waiting until "load"
+
+
+       at support\bank-page.ts:8
+
+       6 |
+       7 |   async open(path = 'index.htm') {
+    >  8 |     await this.page.goto(`/parabank/${path}`);
+         |                     ^
+       9 |   }
+      10 |
+      11 |   async login(username: string, password: string) {
+        at BankPage.open (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:8:21)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\banking.spec.ts:12:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-02-negative-regression-empty-login-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-02-negative-regression-empty-login-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\web-banking-WEB-02-negative-regression-empty-login-chromium\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-02-negative-regression-empty-login-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\web-banking-WEB-02-negative-regression-empty-login-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="WEB-03 @negative @regression unknown login" classname="web\banking.spec.ts" time="0.299">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\web-banking-WEB-03-negative-regression-unknown-login-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-03-negative-regression-unknown-login-chromium\video.webm]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-03-negative-regression-unknown-login-chromium\error-context.md]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-03-negative-regression-unknown-login-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm" type="Error">
+<![CDATA[  [chromium] › web\banking.spec.ts:17:1 › WEB-03 @negative @regression unknown login ───────────────
+
+    Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm
+    Call log:
+      - navigating to "https://parabank.parasoft.com/parabank/index.htm", waiting until "load"
+
+
+       at support\bank-page.ts:8
+
+       6 |
+       7 |   async open(path = 'index.htm') {
+    >  8 |     await this.page.goto(`/parabank/${path}`);
+         |                     ^
+       9 |   }
+      10 |
+      11 |   async login(username: string, password: string) {
+        at BankPage.open (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:8:21)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\banking.spec.ts:18:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-03-negative-regression-unknown-login-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-03-negative-regression-unknown-login-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\web-banking-WEB-03-negative-regression-unknown-login-chromium\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-03-negative-regression-unknown-login-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\web-banking-WEB-03-negative-regression-unknown-login-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="WEB-04 @negative @regression required registration fields" classname="web\banking.spec.ts" time="0.312">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\video.webm]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\error-context.md]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm" type="Error">
+<![CDATA[  [chromium] › web\banking.spec.ts:23:1 › WEB-04 @negative @regression required registration fields 
+
+    Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm
+    Call log:
+      - navigating to "https://parabank.parasoft.com/parabank/register.htm", waiting until "load"
+
+
+       at support\bank-page.ts:8
+
+       6 |
+       7 |   async open(path = 'index.htm') {
+    >  8 |     await this.page.goto(`/parabank/${path}`);
+         |                     ^
+       9 |   }
+      10 |
+      11 |   async login(username: string, password: string) {
+        at BankPage.open (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:8:21)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\banking.spec.ts:24:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\web-banking-WEB-04-negativ-5f08e-equired-registration-fields-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="WEB-05 @negative @regression mismatched password" classname="web\banking.spec.ts" time="0.375">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\web-banking-WEB-05-negative-regression-mismatched-password-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-05-negative-regression-mismatched-password-chromium\video.webm]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-05-negative-regression-mismatched-password-chromium\error-context.md]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-05-negative-regression-mismatched-password-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm" type="Error">
+<![CDATA[  [chromium] › web\banking.spec.ts:31:1 › WEB-05 @negative @regression mismatched password ─────────
+
+    Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm
+    Call log:
+      - navigating to "https://parabank.parasoft.com/parabank/register.htm", waiting until "load"
+
+
+       at support\bank-page.ts:8
+
+       6 |
+       7 |   async open(path = 'index.htm') {
+    >  8 |     await this.page.goto(`/parabank/${path}`);
+         |                     ^
+       9 |   }
+      10 |
+      11 |   async login(username: string, password: string) {
+        at BankPage.open (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:8:21)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\banking.spec.ts:32:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-05-negative-regression-mismatched-password-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-05-negative-regression-mismatched-password-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\web-banking-WEB-05-negative-regression-mismatched-password-chromium\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-05-negative-regression-mismatched-password-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\web-banking-WEB-05-negative-regression-mismatched-password-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="WEB-06 @positive @regression registration, accounts, logout and login" classname="web\banking.spec.ts" time="0.316">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\video.webm]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\error-context.md]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm" type="Error">
+<![CDATA[  [chromium] › web\banking.spec.ts:39:1 › WEB-06 @positive @regression registration, accounts, logout and login 
+
+    Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/register.htm
+    Call log:
+      - navigating to "https://parabank.parasoft.com/parabank/register.htm", waiting until "load"
+
+
+       at support\bank-page.ts:8
+
+       6 |
+       7 |   async open(path = 'index.htm') {
+    >  8 |     await this.page.goto(`/parabank/${path}`);
+         |                     ^
+       9 |   }
+      10 |
+      11 |   async login(username: string, password: string) {
+        at BankPage.open (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:8:21)
+        at BankPage.register (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:18:16)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\banking.spec.ts:41:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\web-banking-WEB-06-positiv-91abb-n-accounts-logout-and-login-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="WEB-07 @positive @regression public navigation" classname="web\banking.spec.ts" time="0.304">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts\web-banking-WEB-07-positive-regression-public-navigation-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-07-positive-regression-public-navigation-chromium\video.webm]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-07-positive-regression-public-navigation-chromium\error-context.md]]
+
+[[ATTACHMENT|artifacts\web-banking-WEB-07-positive-regression-public-navigation-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm" type="Error">
+<![CDATA[  [chromium] › web\banking.spec.ts:54:1 › WEB-07 @positive @regression public navigation ───────────
+
+    Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://parabank.parasoft.com/parabank/index.htm
+    Call log:
+      - navigating to "https://parabank.parasoft.com/parabank/index.htm", waiting until "load"
+
+
+       at support\bank-page.ts:8
+
+       6 |
+       7 |   async open(path = 'index.htm') {
+    >  8 |     await this.page.goto(`/parabank/${path}`);
+         |                     ^
+       9 |   }
+      10 |
+      11 |   async login(username: string, password: string) {
+        at BankPage.open (C:\Users\TOÑO\Desktop\Prueba\tests\support\bank-page.ts:8:21)
+        at C:\Users\TOÑO\Desktop\Prueba\tests\web\banking.spec.ts:55:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-07-positive-regression-public-navigation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-07-positive-regression-public-navigation-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\latest\artifacts\web-banking-WEB-07-positive-regression-public-navigation-chromium\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\latest\artifacts\web-banking-WEB-07-positive-regression-public-navigation-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\latest\artifacts\web-banking-WEB-07-positive-regression-public-navigation-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>

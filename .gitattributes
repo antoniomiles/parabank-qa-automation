@@ -1,0 +1,3 @@
+reports/** -text
+docs/*.json -text
+docs/*.txt -text
