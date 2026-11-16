@@ -1,6 +1,6 @@
 # Plan de pruebas
 
-Práctica independiente elaborada con asistencia de IA. No representa una evaluación sin asistencia ni certifica seguridad o aptitud bancaria.
+
 
 Objetivo: validar el flujo de pago de servicios del PDF, además de navegación, registro, autenticación y consultas REST. La matriz completa de pagos está en `casos/casos-pagos.csv`: siete casos con precondiciones, datos, pasos, esperado, prioridad, aceptación y justificación. Entorno compartido: los datos pueden desaparecer por reinicios externos. Se crean únicamente usuarios ficticios únicos. No se llama a inicialización, limpieza global, administración ni operaciones sobre cuentas ajenas.
 
